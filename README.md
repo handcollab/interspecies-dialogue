@@ -1,17 +1,17 @@
-# 三界共語 · Three Realms in Dialogue — 極簡版
+# 三界共語 · Interspecies Dialogue — 極簡版
 
 植物、舞者與 AI 以平等的身分對話的現場展演。這是作品網站的**極簡版**：文字為主、深色、安靜，影音只在你要看的時候才載入。
 
-A quiet, text-led website for *Three Realms in Dialogue*, a live performance in which plants, a dancer and an AI speak as equals.
+A quiet, text-led website for *Interspecies Dialogue* (三界共語), a live performance in which plants, a dancer and an AI speak as equals.
 
 ## 內容
 
-- **植物**：200 段氣孔顯微錄影的實驗經過、可篩選的圓點圖與表格、55 段開口標註的曲線（先列 4 段代表，其餘收合）。
+- **植物**：實驗經過（前後數百次測試，本站精選節錄其中 200 段氣孔顯微錄影）、可篩選的圓點圖與表格、55 段開口標註的曲線（先列 4 段代表，其餘收合）。
 - **AI · 聲音**：《單向讀取》（節錄與全曲）與音樂性四段，附波形播放器；展演聲音只有文字說明，不附音檔。
 - **AI · 影像**：A 到 F5 與雙投影各版本的無聲片段。
 - **AIGC 動畫**：五種風格 28 支（每種先列 4 支，其餘收合）；另有 20 支「長出五官」的動畫收在獨立區塊，需點擊才會顯示。
 - **人類**：舞者的敘事表與 AI 的回應。
-- **資料**：`data/` 內含完整的實驗紀錄與開口標註（CSV / JSON）及欄位說明。
+- **資料**：`data/` 內含這 200 段精選紀錄與 55 段開口標註（CSV / JSON）及欄位說明。
 
 ## 隱私
 
@@ -38,13 +38,13 @@ data/                 可下載的資料
 2. Settings → Pages → Source 選 `main` 分支、`/ (root)`。
 3. 所有路徑都是相對路徑，放在 `https://<帳號>.github.io/<repository>/` 底下即可運作。
 
-部署後建議調整兩處：
+網址：
 
-- **網址**：本站 https://handcollab.github.io/three-realms/ ；展示版 https://handcollab.github.io/three-realms-showcase/
-- **分享預覽圖**：`og:image` 與 `twitter:image` 目前是相對路徑 `assets/og.jpg`；Facebook、LINE、X 需要完整網址。知道網址後，把這兩處改成 `https://<帳號>.github.io/<repository>/assets/og.jpg`。
+- **本站** https://handcollab.github.io/interspecies-dialogue/ ；**展示版** https://handcollab.github.io/interspecies-dialogue-showcase/
+- **分享預覽圖**：`og:url`、`og:image` 與 `twitter:image` 都已寫成上面這個本站網址底下的完整網址（Facebook、LINE、X 需要）。repository 若再改名，`index.html` 裡這幾處與展示版連結要一起改。
 
 本機預覽：在這個資料夾執行 `python -m http.server`，再開 `http://localhost:8000/`。
 
 中文字型（Noto Sans TC、Noto Serif TC）是放在本站的子集，只含本頁用到的字；如果之後改了文字、加了新字，新字會先用系統字型顯示，需要重新產生子集。等寬字 JetBrains Mono 由 Google Fonts 提供，非阻塞載入。
 
-© 三界共語 2026
+© 三界共語 Interspecies Dialogue 2026
