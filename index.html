@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三界共語 · Three Realms in Dialogue</title>
+<meta name="description" content="植物、舞者與 AI 以平等的身分對話的現場展演。植物以氣孔的開闔發言，AI 以自己生成的聲音與影像回應，不配合人類的敘事，也不經人手剪接。">
+<meta name="theme-color" content="#090909">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website"><meta property="og:url" content="https://handcollab.github.io/three-realms/">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="三界共語 · Three Realms in Dialogue">
+<meta property="og:description" content="植物、舞者與 AI 以平等的身分對話：真實的氣孔顯微錄影、舞者的敘事表，以及 AI 依自己的規則生成的聲音與影像。">
+<meta property="og:image" content="https://handcollab.github.io/three-realms/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="顯微鏡下同一個紫錦草氣孔：左邊閉合，右邊張開。">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="三界共語 · Three Realms in Dialogue">
+<meta name="twitter:description" content="植物、舞者與 AI 以平等的身分對話的現場展演。">
+<meta name="twitter:image" content="https://handcollab.github.io/three-realms/assets/og.jpg">
+<meta name="twitter:image:alt" content="顯微鏡下同一個紫錦草氣孔：左邊閉合，右邊張開。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/noto-sans-tc-sub.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/noto-serif-tc-sub.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap"></noscript>
+<link rel="stylesheet" href="assets/css/site.css?v=202610200842">
+</head>
+<body>
+<a class="skip" href="#main">跳到內容</a>
+
+<nav class="topnav" aria-label="主要導覽">
+  <div class="wrap">
+    <a class="mark" href="#top">三界共語</a>
+    <ul>
+      <li><a class="nl" href="#plant" data-accent="var(--green)">植物</a></li>
+      <li><a class="nl" href="#sound" data-accent="var(--blue)">聲音</a></li>
+      <li><a class="nl" href="#image" data-accent="var(--blue)">影像</a></li>
+      <li><a class="nl" href="#aigc" data-accent="var(--blue)">動畫</a></li>
+      <li><a class="nl" href="#human" data-accent="var(--amber)">人類</a></li>
+      <li><a class="nl" href="#process" data-accent="var(--ink-dim)">方法</a></li>
+      <li><a class="nl" href="#data" data-accent="var(--green)">資料</a></li>
+      <li><a class="nl" href="#credits" data-accent="var(--ink-dim)">團隊</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<header class="hero" id="top">
+  <p class="eyebrow">三界共語 <span class="dim">/</span> <span class="c-green">植物</span> · <span class="c-amber">人類</span> · <span class="c-blue">AI</span> <span class="dim">/ 現場展演 · LIVE PERFORMANCE</span></p>
+  <h1>三界共語</h1>
+  <p class="subtitle" lang="en">THREE REALMS IN DIALOGUE</p>
+  <p class="lead">植物不使用文字，也不發出我們聽得見的聲音。</p>
+  <p class="lead-en" lang="en">Plants don't use words, nor do they make sounds we can hear.</p>
+  <p class="lead-src">— 紀錄影片〈論述〉的開場旁白 <span lang="en">OPENING NARRATION</span></p>
+  <div class="concept">
+    <p>《三界共語》是一場約 10 到 20 分鐘的現場展演。植物、舞者與 AI 站在同一個現場，以平等的身分發言：植物用葉片上氣孔的開闔，舞者用身體，AI 用它自己生成的聲音與影像。這件作品不宣稱已經聽懂植物；它處理的是翻譯本身——其中的距離、誤差，以及在誤差裡重新想像的可能。</p>
+  </div>
+  <p class="body-en" lang="en">A 10–20 minute live piece. Plants, a dancer and an AI share one stage as equal speakers. The work does not claim to understand plants; it is about translation itself — its distance, its errors, and what can be reimagined inside them.</p>
+  <figure class="hero-fig">
+    <img src="assets/media/lab/micro/micro-pair-01.jpg" width="968" height="320" alt="顯微鏡下同一個紫錦草氣孔的兩個時刻：左邊兩片保衛細胞緊貼、孔縫閉合；右邊孔縫張開成一道細長的暗縫。" decoding="async" fetchpriority="high">
+    <figcaption><span class="zh">同一個氣孔，相隔八分鐘：閉合（17:00）→ 張開（25:25）。</span>PURPLE HEART · 500× · BLUE LIGHT · 2026-01-08</figcaption>
+  </figure>
+  <ul class="meta" aria-label="作品概要">
+    <li>現場展演 <b>10–20</b> 分鐘</li>
+    <li>顯微錄影紀錄 <b>200</b> 段</li>
+    <li>植物聲音食材 <b>10</b> 段</li>
+    <li>AI 方 <b>零</b>人工剪輯</li>
+  </ul>
+</header>
+
+<main id="main">
+
+<section class="sec neutral" aria-labelledby="rules-h">
+  <h2 class="sec-label" id="rules-h">三條規則 / The Rules</h2>
+  <div class="mv">
+    <div class="mv-time">01</div>
+    <div><h3>不配合<span class="en">NO FITTING</span></h3>
+    <p>AI 讀過舞者的敘事表，但不照著它走。人類的時間表不是 AI 的樂譜。</p></div>
+  </div>
+  <div class="mv">
+    <div class="mv-time">02</div>
+    <div><h3>不剪輯<span class="en">NO HAND-EDITING</span></h3>
+    <p>沒有人手打開剪輯軟體。聲音與影像全部由程式依規則生成，同一組設定可以逐格重現。</p></div>
+  </div>
+  <div class="mv">
+    <div class="mv-time">03</div>
+    <div><h3>用自己的語言<span class="en">ITS OWN WAY</span></h3>
+    <p>每一方都用自己的方式回應。誤讀，也算一種回應。</p></div>
+  </div>
+</section>
+
+<!-- ================= PLANT ================= -->
+<section class="sec plant" id="plant" aria-labelledby="plant-h">
+  <p class="sec-label">植物 / Plant</p>
+  <h2 id="plant-h">氣孔：葉片上的呼吸</h2>
+  <p class="h2-en">STOMATA — HOW A LEAF BREATHES</p>
+  <div class="concept">
+    <p>葉片表面布滿肉眼看不見的小孔，叫做氣孔。每個氣孔由一對保衛細胞圍成：細胞吸水膨脹時孔張開，二氧化碳進來、水氣散出；細胞失水時孔闔上。光線、溫度、濕度與水分，都會讓它開或關。</p>
+    <p>這是植物與世界之間的呼吸，也是它最接近語言的地方。所以植物這一方的「話」，取自真實的顯微錄影：研究團隊在溫室裡用顯微鏡長時間盯著同一片葉子，等氣孔開口。</p>
+  </div>
+  <p class="body-en" lang="en">A stoma is a pore framed by two guard cells. When they swell with water, it opens; carbon dioxide comes in, water vapour leaves. The plant's voice in this work is real microscope footage of that movement.</p>
+  <ul class="meta"><li>期間 <b>2025-12-10 — 2026-02-11</b></li><li>10 DEC 2025 — 11 FEB 2026</li></ul>
+
+  <div class="stats">
+    <div class="stat"><div class="num">200<small>段</small></div><div class="lbl">顯微錄影紀錄<span class="en">RECORDED SESSIONS</span></div></div>
+    <div class="stat"><div class="num">27<small>天</small></div><div class="lbl">實驗日<span class="en">LAB DAYS</span></div></div>
+    <div class="stat"><div class="num">4<small>種</small></div><div class="lbl">植物<span class="en">SPECIES</span></div></div>
+    <div class="stat"><div class="num">2<small>種</small></div><div class="lbl">顯微鏡<span class="en">SCOPE TYPES</span></div></div>
+    <div class="stat"><div class="num">55<small>段</small></div><div class="lbl">逐秒開口標註<span class="en">ANNOTATED</span></div></div>
+    <div class="stat"><div class="num">13<small>段</small></div><div class="lbl">記為效果顯著<span class="en">STRIKING</span></div></div>
+  </div>
+
+  <div class="sub">
+    <h3 class="mini-label">四種植物 / Four species</h3>
+    <div class="mv"><div class="mv-time">110 段</div><div><h4>紫錦草<span class="en">PURPLE HEART</span></h4><p>最常被觀察的對象。13 段「效果顯著」裡，有 9 段是它。</p></div></div>
+    <div class="mv"><div class="mv-time">63 段</div><div><h4>鴨跖草<span class="en">INCHPLANT</span></h4><p>紀錄影片〈實驗〉稱「紫背鴨跖草」是最適合對話的對象（推測即試算表裡的鴨拓草）：細胞壁分明、氣孔透亮、結構完整。</p></div></div>
+    <div class="mv"><div class="mv-time">26 段</div><div><h4>扶桑花<span class="en">HIBISCUS</span></h4><p>多以 1000× 觀察。換成手持顯微鏡後難以觀測，之後的實驗集中在另外兩種。</p></div></div>
+    <div class="mv"><div class="mv-time">1 段</div><div><h4>佛羅里達蔓綠絨<span class="en">PHILODENDRON 'FLORIDA'</span></h4><p>畫面裡看不到氣孔；影像版本改用細胞中心，作為演算的開闔點。</p></div></div>
+    <p class="note">試算表原寫作「鴨拓草」，本站內文採通行寫法「鴨跖草」。</p>
+  </div>
+
+  <div class="sub">
+    <h3 class="mini-label">實驗經過 / How it went</h3>
+    <div class="mv"><div class="mv-time">2025-12-10<span class="len">水 WATER</span></div><div><h4>先試水</h4><p>桌上型顯微鏡，500× 與 1000×。先試噴水，發現噴水後葉面不易對焦；之後改用刷毛沾水、浸泡，也拿自然斷掉的枝條測試。這一階段共 59 段，沒有一段被記為「效果顯著」。</p></div></div>
+    <div class="mv"><div class="mv-time">2026-01-07<span class="len">藍光 BLUE</span></div><div><h4>改用藍光</h4><p>刺激改為藍光照射，以紫錦草與鴨跖草為主、500×。13 段「效果顯著」中有 10 段出現在 1 月 8 日到 28 日之間。最常見的變數是藍光燈的電池：備註裡反覆出現「電力微弱」「更換完電池」。</p></div></div>
+    <div class="mv"><div class="mv-time">2026-02-02<span class="len">手持 HANDHELD</span></div><div><h4>換成手持顯微鏡</h4><p>改用手持式數位顯微鏡，約 711–754×。事前就列出它的隱憂：藍光不如原本直接照到表皮，調焦時可能晃動葉片。後來替藍光手電筒加上泡棉固定，並在顯微鏡燈上覆一層藍色玻璃紙。這一階段 64 段中，有 41 段歸為「無明顯開關」。</p></div></div>
+    <div class="mv"><div class="mv-time">2026-02-10<span class="len">長錄 LONG TAKES</span></div><div><h4>等它晚開</h4><p>有些氣孔開得很晚，少數個案錄到 60 至 90 分鐘以上，最長的一段約 1 小時 45 分。實驗員在這時訂下四個分類，用來挑選可用的素材。</p></div></div>
+  </div>
+
+  <!-- data view -->
+  <div class="sub" id="records">
+    <h3>200 段紀錄，每一點是一段錄影<span class="en">200 SESSIONS · ONE DOT EACH</span></h3>
+    <p class="note" style="margin:6px 0 0">由左到右是 27 個實驗日，同一天的錄影由下往上疊。顏色是實驗員訂下的四種結果；可以依植物或刺激方式篩選，指向或點一下圓點看那一段的紀錄。</p>
+    <div class="filters" role="group" aria-label="篩選紀錄">
+      <div class="fgroup" data-key="plant" role="group" aria-label="植物">
+        <span class="flabel" aria-hidden="true">植物</span>
+        <button class="chip" type="button" data-v="" aria-pressed="true">全部</button>
+        <button class="chip" type="button" data-v="0" aria-pressed="false">紫錦草</button>
+        <button class="chip" type="button" data-v="1" aria-pressed="false">鴨跖草</button>
+        <button class="chip" type="button" data-v="2" aria-pressed="false">扶桑花</button>
+        <button class="chip" type="button" data-v="3" aria-pressed="false">蔓綠絨</button>
+      </div>
+      <div class="fgroup" data-key="stim" role="group" aria-label="刺激方式">
+        <span class="flabel" aria-hidden="true">刺激</span>
+        <button class="chip" type="button" data-v="" aria-pressed="true">全部</button>
+        <button class="chip" type="button" data-v="0" aria-pressed="false">水</button>
+        <button class="chip" type="button" data-v="1" aria-pressed="false">藍光</button>
+        <button class="chip" type="button" data-v="2" aria-pressed="false">其他光</button>
+      </div>
+    </div>
+    <div class="chart" id="dotchart">
+      <noscript><span class="ns">互動圖表需要 JavaScript；完整資料可在下方「資料」段落下載。</span></noscript>
+    </div>
+    <div class="readout" id="readout" aria-live="polite"><span class="mono">SELECT A DOT</span><br>指向或點選圓點；聚焦圖表後也可以用 ← → 鍵逐段瀏覽。</div>
+
+    <ul class="legend" id="legend" aria-label="結果分類與段數">
+      <li data-o="0"><span class="sw sw-S" aria-hidden="true"></span><span class="name">開關明顯・效果顯著<span class="en">CLEAR &amp; STRIKING</span></span><span class="cnt"><span class="v">13</span><span class="of"></span></span><span class="desc">看得出一開一關，幅度大。開得晚、但效果顯著的，也歸在這裡。</span></li>
+      <li data-o="1"><span class="sw sw-V" aria-hidden="true"></span><span class="name">空白<span class="en">CLEAR, NOT STRIKING</span></span><span class="cnt"><span class="v">45</span><span class="of"></span></span><span class="desc">開關明顯，但沒有到驚豔。「空白」是實驗員取的類名，不代表缺資料。</span></li>
+      <li data-o="2"><span class="sw sw-F" aria-hidden="true"></span><span class="name">開關不明顯<span class="en">FAINT</span></span><span class="cnt"><span class="v">53</span><span class="of"></span></span><span class="desc">也許有緩慢或很小的變化，需要再看一次。</span></li>
+      <li data-o="3"><span class="sw sw-N" aria-hidden="true"></span><span class="name">無明顯開關<span class="en">NO VISIBLE CHANGE</span></span><span class="cnt"><span class="v">83</span><span class="of"></span></span><span class="desc">觀察期間，沒有看到明顯的開或關。</span></li>
+      <li data-o="4"><span class="sw sw-O" aria-hidden="true"></span><span class="name">其他<span class="en">OTHER</span></span><span class="cnt"><span class="v">6</span><span class="of"></span></span><span class="desc">待商榷 3 段（可能實驗前氣孔已開）、難以觀測 1 段、備註整格空白 2 段。</span></li>
+    </ul>
+    <p class="note" style="margin-top:10px">分類依試算表「備註」欄的文字整理，沒有逐支回看原始影片。備註沒寫結果的列，依實驗員的慣例歸入「空白」；只寫「開關緩慢」「些微打開」的 4 段，保守歸入「開關不明顯」。</p>
+
+    <details class="more" id="tbl-details">
+      <summary><span class="zh">以表格檢視</span>TABLE VIEW · <span id="tbl-count">200</span> ROWS</summary>
+      <div class="inner">
+        <div class="tbl-wrap" tabindex="0" role="region" aria-label="200 段實驗紀錄表格，可水平捲動">
+          <table class="data" id="exp-table">
+            <caption class="visually-hidden">200 段顯微錄影紀錄。點欄位標題可以排序；篩選條件與上方圓點圖相同。</caption>
+            <thead><tr>
+              <th scope="col" data-k="id"><button type="button">#</button></th>
+              <th scope="col" data-k="d"><button type="button">日期</button></th>
+              <th scope="col" data-k="p"><button type="button">植物</button></th>
+              <th scope="col" data-k="sc"><button type="button">顯微鏡</button></th>
+              <th scope="col" data-k="m"><button type="button">倍率</button></th>
+              <th scope="col" data-k="me"><button type="button">刺激</button></th>
+              <th scope="col" data-k="h"><button type="button">濕度</button></th>
+              <th scope="col" data-k="t"><button type="button">溫度</button></th>
+              <th scope="col" data-k="o"><button type="button">結果</button></th>
+              <th scope="col" data-k="n"><button type="button">備註</button></th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </details>
+
+    <h4 class="mini-label">三個階段的結果 / Outcomes by phase</h4>
+    <div class="tbl-wrap" style="max-height:none" tabindex="0" role="region" aria-label="三個階段的結果">
+      <table class="data simple"><caption class="visually-hidden">三個階段各結果的段數</caption><thead><tr><th scope="col">階段</th><th scope="col" class="num">段數</th><th scope="col" class="num">顯著</th><th scope="col" class="num">空白</th><th scope="col" class="num">不明顯</th><th scope="col" class="num">無明顯</th><th scope="col" class="num">其他</th></tr></thead><tbody><tr><th scope="row">水 · 桌上型<span class="en ph-en">WATER · BENCH</span></th><td class="num">59</td><td class="num">0</td><td class="num">18</td><td class="num">22</td><td class="num">17</td><td class="num">2</td></tr><tr><th scope="row">光 · 桌上型<span class="en ph-en">LIGHT · BENCH</span></th><td class="num">77</td><td class="num">10</td><td class="num">23</td><td class="num">19</td><td class="num">25</td><td class="num">0</td></tr><tr><th scope="row">藍光 · 手持<span class="en ph-en">BLUE · HANDHELD</span></th><td class="num">64</td><td class="num">3</td><td class="num">4</td><td class="num">12</td><td class="num">41</td><td class="num">4</td></tr></tbody></table>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3 class="mini-label">設備與條件 / Setup</h3>
+    <table class="kv">
+      <tr><th scope="row">MICROSCOPE<span class="zh">顯微鏡</span></th><td>桌上型 MICROTECH（2025-12-10 至 2026-01-28，136 段）→ 手持式 Dino-Lite（2026-02-02 至 02-11，64 段）</td></tr>
+      <tr><th scope="row">MAGNIFICATION<span class="zh">倍率</span></th><td>500×（108 段）、1000×（27 段）、200×（1 段）；手持約 711–754×</td></tr>
+      <tr><th scope="row">STIMULUS<span class="zh">刺激</span></th><td>光照 141 段（藍光 137、白光 2、手機手電筒 2）；水 59 段（刷毛 45、噴水 11、浸泡 3）</td></tr>
+      <tr><th scope="row">AMBIENT LIGHT<span class="zh">環境光</span></th><td>全程記為 450 nm / 660 nm（藍光與紅光波段），是錄影環境的固定照明；作為刺激的「藍光」是另外加照的藍光手電筒。</td></tr>
+      <tr><th scope="row">CLIMATE<span class="zh">溫濕度</span></th><td>濕度 38–66%，溫度 22–27 °C（197 段有紀錄，未加控制）</td></tr>
+    </table>
+  </div>
+
+  <div class="sub dialog-grid">
+    <div class="dialog-col plain">
+      <h4>沒那麼順利 / What went wrong</h4>
+      <ul>
+        <li><b>電池</b><span class="en">BATTERY</span><br>藍光手電筒會沒電。有一次錄完才發現電池耗盡，不確定是從哪一刻開始。</li>
+        <li><b>對焦</b><span class="en">FOCUS</span><br>噴水後葉面難以對焦；手持顯微鏡調焦時會晃動葉片；長時間錄影中常有模糊與畫面位移。</li>
+        <li><b>錄影</b><span class="en">RECORDING</span><br>電腦剛開機時常錄到一半沒反應，有兩段的前十分鐘檔案毀損。</li>
+        <li><b>溫室</b><span class="en">GREENHOUSE</span><br>黃葉變多，蜘蛛與小飛蛾出沒，一度懷疑有紅蜘蛛（未經鑑定）；有一次澆水時抓到一隻跳蛛。</li>
+        <li><b>葉片</b><span class="en">LEAF HEALTH</span><br>部分紫錦草葉片綠化、出現白斑。實驗員推測與光照不足或蟲害有關，尚未證實。</li>
+      </ul>
+    </div>
+    <div class="dialog-col a">
+      <h4>學到的事 / What we learned</h4>
+      <ul>
+        <li><b>開口很慢，也很少見</b><span class="en">SLOW AND RARE</span><br>200 段裡有 83 段歸為「無明顯開關」。2 月 4 日錄的十段裡，只有一片紫錦草幼葉明顯打開。</li>
+        <li><b>新葉似乎比較活潑</b><span class="en">YOUNG LEAVES</span><br>1 月 16 日，一片較新的紫錦草葉片在藍光變弱時仍明顯打開，拿掉藍光後也沒有很快關閉，甚至開得更大。那一段的備註寫著：「也許新葉生命力比較活潑。」這是一次觀察，不是結論。</li>
+        <li><b>顯著的都在藍光下</b><span class="en">BLUE LIGHT</span><br>13 段「效果顯著」全部出現在藍光條件下；噴水、刷毛、浸泡的 59 段裡，沒有一段被記為顯著。但若把「空白」一起算，水 30.5%、藍光 28.5% 的片段看得到開關，兩者差不多。</li>
+        <li><b>要等</b><span class="en">WAITING</span><br>被標註的 55 段多半錄 30 到 45 分鐘；目測的最大開口，中位數只到約五成。有些氣孔要過了半小時才看得出變化。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3 class="mini-label">讀這些數字之前 / Caveats</h3>
+    <ul class="dots">
+      <li>這不是對照實驗。葉片、澆水間隔、電池電量與溫濕度都在變動，不能據此推論因果。</li>
+      <li>分類計數依試算表「備註」欄的文字整理，沒有逐支回看原始影片。</li>
+      <li>開口百分比是標註者的目測估計，不是量測值。</li>
+      <li>樣本小，而且日期、植株狀態、顯微鏡與刺激方式彼此混雜。</li>
+    </ul>
+  </div>
+
+  <!-- annotations -->
+  <div class="sub" id="annotations">
+    <h3>標註：55 段，逐分逐秒<span class="en">55 SESSIONS, SECOND BY SECOND</span></h3>
+    <div class="body" style="margin-top:12px">
+      <p>從 200 段中挑出 55 段逐段標註：記下氣孔開到幾成（目測百分比）與當下的時間碼，再另外標出模糊、位置微調等雜訊時段。這份標註是讓機器學會「看」氣孔的教材。</p>
+      <p>氣孔的變化以小時計，人的注意力卻只能維持 7 到 15 分鐘，於是機器與 AI 被邀請加入。機器並不理解氣孔是什麼；它學的是，在這樣的畫面裡，這個東西長什麼樣子。辨識模型 YOLO 的名字，正是「只看一次」（You Only Look Once）。</p>
+    </div>
+    <code class="cmd">0% / 00:15　20% / 10:46　50% / 20:12　95% / 28:15</code>
+    <p class="note" style="margin-top:8px">節錄。一個鴨跖草氣孔在 28 分鐘內，從全閉開到幾乎全開。（2025-12-10，1000×，噴水）</p>
+    <ul class="meta" style="margin-top:16px">
+      <li>紫錦草 <b>32</b> · 鴨跖草 <b>17</b> · 扶桑花 <b>6</b></li>
+      <li>500× <b>34</b> · 1000× <b>8</b> · 手持約 700× <b>13</b></li>
+      <li>最大開口中位數 <b>50%</b></li>
+      <li>開到八成以上 <b>10</b> 段</li>
+      <li>最長約 <b>105</b> 分</li>
+    </ul>
+    <p class="note" style="margin-top:22px">每段標註都畫成一條開口曲線（53 段；另 2 段沒有百分比而略過）。下面先列 4 段代表：全開、開了又關、幾乎不動，以及手持顯微鏡錄得最久的一段。縱軸都是 0–100%；橫軸是該段錄影自己的長度，所以每張的時間尺度不同。上方的植物與刺激篩選也套用在這裡。</p>
+    <div class="spark-key" aria-hidden="true">
+      <span><i></i>逐點標註</span><span><i class="dash"></i>區段式標註（中間值為示意）</span><span><i class="band"></i>底線上的短槓：模糊、位移等雜訊時段</span>
+    </div>
+    <div class="spark-grid" id="sparks" role="list" aria-label="4 段代表性的氣孔開口曲線"></div>
+    <details class="more" id="sparks-details">
+      <summary><span class="zh">看全部 53 段</span>ALL 53 CURVES</summary>
+      <div class="inner"><div class="spark-grid" id="sparks-more" role="list" aria-label="其餘 49 段標註的氣孔開口曲線"></div></div>
+    </details>
+  </div>
+
+  <!-- micro scrubber -->
+  <div class="sub">
+    <h3 class="mini-label">同一個氣孔，四十分鐘 / One stoma, forty minutes</h3>
+    <figure class="scrub" id="scrub" data-frames='[&quot;assets/media/lab/micro/micro-strip-01/f01.jpg&quot;, &quot;assets/media/lab/micro/micro-strip-01/f02.jpg&quot;, &quot;assets/media/lab/micro/micro-strip-01/f03.jpg&quot;, &quot;assets/media/lab/micro/micro-strip-01/f04.jpg&quot;, &quot;assets/media/lab/micro/micro-strip-01/f05.jpg&quot;, &quot;assets/media/lab/micro/micro-strip-01/f06.jpg&quot;, &quot;assets/media/lab/micro/micro-strip-01/f07.jpg&quot;, &quot;assets/media/lab/micro/micro-strip-01/f08.jpg&quot;]' data-times='[&quot;05:00&quot;, &quot;17:00&quot;, &quot;19:30&quot;, &quot;21:20&quot;, &quot;23:15&quot;, &quot;25:25&quot;, &quot;30:00&quot;, &quot;40:00&quot;]'>
+      <div class="scrub-frame">
+        <img class="frame" id="scrub-img" src="assets/media/lab/micro/micro-strip-01/f01.jpg" width="480" height="320" loading="lazy" decoding="async" alt="顯微鏡下的一個紫錦草氣孔，錄影第 05:00。">
+        <span class="scrub-t" id="scrub-t" aria-hidden="true">05:00</span>
+      </div>
+      <div class="scrub-ctl">
+        <span class="mono" aria-hidden="true">05:00</span>
+        <input class="rng" id="scrub-rng" type="range" min="0" max="7" step="1" value="0" aria-label="錄影時間" aria-valuetext="05:00">
+        <span class="mono" aria-hidden="true">40:00</span>
+      </div>
+      <figcaption><span class="zh">拖動滑桿，看首頁那個氣孔的四十分鐘：17:00 前幾乎閉合，19:30 起張開，25:25 前後最寬，之後回落；36 分鐘起照明色調改變，畫面轉綠。畫格以模板比對自動追蹤同一個氣孔後裁切。試算表裡標註的那一顆，不一定就是圖中這一顆。</span>PURPLE HEART · 500× · BLUE LIGHT · 2026-01-08 · 8 FRAMES</figcaption>
+    </figure>
+  </div>
+
+  <div class="sub">
+    <h3 class="mini-label">溫室與實驗桌 / Greenhouse & bench</h3>
+    <p class="note">實驗影片皆為靜音；畫面只保留植物、設備與顯微影像。</p>
+    <div class="gallery">
+      <figure><button class="mbtn" type="button" data-img="assets/media/lab/images/lab-img-05.jpg" data-w="1280" data-h="721" data-cap="桌上型顯微鏡，旁邊的螢幕上是成對的保衛細胞。" data-tag="BENCH" aria-label="放大圖片：桌上型顯微鏡與螢幕；螢幕上是青綠色的氣孔影像。"><img class="ratio-sq" src="assets/media/thumbs/lab-img-05-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="桌上型顯微鏡與螢幕；螢幕上是青綠色的氣孔影像。"></button><figcaption><span class="tag">BENCH</span>桌上型顯微鏡，旁邊的螢幕上是成對的保衛細胞。</figcaption></figure>
+      <figure><button class="mbtn" type="button" data-video="assets/media/lab/videos/lab-vid-04.mp4" data-full="assets/media/lab/videos/lab-vid-04.mp4" data-cap="手持顯微鏡支架：泡棉固定藍光手電筒，載物處覆一層藍色玻璃紙。（無聲）" data-tag="RIG · 4 S" aria-label="播放無聲影片：手持顯微鏡支架、泡棉夾具與藍光手電筒的近照。（約 4 秒）"><img class="ratio-sq" src="assets/media/thumbs/lab-vid-04-640.webp" width="640" height="1138" loading="lazy" decoding="async" alt="手持顯微鏡支架、泡棉夾具與藍光手電筒的近照。"><span class="badge" aria-hidden="true">PLAY</span></button><figcaption><span class="tag">RIG · 4 S</span>手持顯微鏡支架：泡棉固定藍光手電筒，載物處覆一層藍色玻璃紙。（無聲）</figcaption></figure>
+      <figure><button class="mbtn" type="button" data-img="assets/media/lab/images/lab-img-40.jpg" data-w="721" data-h="1280" data-cap="溫室植栽區：植物燈下成群的鴨跖草盆栽，葉面有紫、綠、銀白的條紋。" data-tag="GREENHOUSE" aria-label="放大圖片：植物燈下成群的鴨跖草盆栽，葉面有紫、綠、銀白條紋。"><img class="ratio-sq" src="assets/media/thumbs/lab-img-40-640.webp" width="640" height="1136" loading="lazy" decoding="async" alt="植物燈下成群的鴨跖草盆栽，葉面有紫、綠、銀白條紋。"></button><figcaption><span class="tag">GREENHOUSE</span>溫室植栽區：植物燈下成群的鴨跖草盆栽，葉面有紫、綠、銀白的條紋。</figcaption></figure>
+      <figure><button class="mbtn" type="button" data-video="assets/media/lab/videos/lab-vid-03.mp4" data-full="assets/media/lab/videos/lab-vid-03.mp4" data-cap="扶桑花開了新花。花朵開放，不等於氣孔開啟。（無聲）" data-tag="HIBISCUS · 11 S" aria-label="播放無聲影片：開花中的扶桑花盆栽群。（約 11 秒）"><img class="ratio-sq" src="assets/media/thumbs/lab-vid-03-640.webp" width="640" height="960" loading="lazy" decoding="async" alt="開花中的扶桑花盆栽群。"><span class="badge" aria-hidden="true">PLAY</span></button><figcaption><span class="tag">HIBISCUS · 11 S</span>扶桑花開了新花。花朵開放，不等於氣孔開啟。（無聲）</figcaption></figure>
+      <figure><button class="mbtn" type="button" data-img="assets/media/lab/images/lab-img-34.jpg" data-w="721" data-h="1280" data-cap="紫錦草葉片觀察：葉面出現淺色斑塊。" data-tag="LEAF" aria-label="放大圖片：紫錦草葉片近照，葉面有淺色斑塊。"><img class="ratio-sq" src="assets/media/thumbs/lab-img-34-640.webp" width="640" height="1136" loading="lazy" decoding="async" alt="紫錦草葉片近照，葉面有淺色斑塊。"></button><figcaption><span class="tag">LEAF</span>紫錦草葉片觀察：葉面出現淺色斑塊。</figcaption></figure>
+      <figure><button class="mbtn" type="button" data-video="assets/media/lab/videos/lab-vid-05.mp4" data-full="assets/media/lab/videos/lab-vid-05.mp4" data-cap="紫錦草叢裡，葉尖上停著一隻小型跳蛛。（無聲）" data-tag="VISITOR · 18 S" aria-label="播放無聲影片：紫錦草葉尖上的小型跳蛛。（約 18 秒）"><img class="ratio-sq" src="assets/media/thumbs/lab-vid-05-640.webp" width="640" height="1138" loading="lazy" decoding="async" alt="紫錦草葉尖上的小型跳蛛。"><span class="badge" aria-hidden="true">PLAY</span></button><figcaption><span class="tag">VISITOR · 18 S</span>紫錦草叢裡，葉尖上停著一隻小型跳蛛。（無聲）</figcaption></figure>
+      <figure><button class="mbtn" type="button" data-img="assets/media/lab/micro/micro-still-06.jpg" data-w="1600" data-h="900" data-cap="鴨跖草 500×・藍光照射，錄影第 25 分鐘。未經調色的原始畫格。" data-tag="INCHPLANT · 500×" aria-label="放大圖片：顯微鏡下鴨跖草的表皮細胞與氣孔。"><img class="ratio-sq" src="assets/media/thumbs/micro-still-06-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="顯微鏡下鴨跖草的表皮細胞與氣孔。"></button><figcaption><span class="tag">INCHPLANT · 500×</span>鴨跖草 500×・藍光照射，錄影第 25 分鐘。未經調色的原始畫格。</figcaption></figure>
+      <figure><button class="mbtn" type="button" data-img="assets/media/lab/micro/micro-still-10.jpg" data-w="1600" data-h="900" data-cap="扶桑花 1000×・水分處理，錄影第 4 分鐘。" data-tag="HIBISCUS · 1000×" aria-label="放大圖片：顯微鏡下扶桑花的表皮，波浪狀的細胞壁。"><img class="ratio-sq" src="assets/media/thumbs/micro-still-10-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="顯微鏡下扶桑花的表皮，波浪狀的細胞壁。"></button><figcaption><span class="tag">HIBISCUS · 1000×</span>扶桑花 1000×・水分處理，錄影第 4 分鐘。</figcaption></figure>
+      <figure><button class="mbtn" type="button" data-img="assets/media/lab/images/lab-img-03.jpg" data-w="1280" data-h="721" data-cap="目鏡視野：圓形視域中的氣孔群。" data-tag="EYEPIECE" aria-label="放大圖片：顯微鏡目鏡裡的圓形視野，黃綠色的表皮細胞與氣孔。"><img class="ratio-sq" src="assets/media/thumbs/lab-img-03-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="顯微鏡目鏡裡的圓形視野，黃綠色的表皮細胞與氣孔。"></button><figcaption><span class="tag">EYEPIECE</span>目鏡視野：圓形視域中的氣孔群。</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOUND ================= -->
+<section class="sec ai" id="sound" aria-labelledby="sound-h">
+  <p class="sec-label">AI · 聲音 / AI · Sound</p>
+  <h2 id="sound-h">從十段植物聲音長出來</h2>
+  <p class="h2-en">GROWN FROM TEN PLANT SOUNDS</p>
+  <div class="concept"><p>AI 方的所有聲音，都只從 10 段植物聲音素材長出來，沒有外部取樣，也沒有合成器的預設音色。這 10 段被稱為「食材」。</p></div>
+  <p class="body-en" lang="en">Every sound on the AI side grows out of ten processed plant recordings. No outside samples, no synth presets.</p>
+
+  <div class="sub">
+    <div class="sub-head"><span class="date">2026-05-27 / 06-03</span><h3>植物聲音形態實驗室<span class="en">PLANT SOUND LAB</span></h3></div>
+    <div class="body">
+      <p>起點是一個在瀏覽器裡執行的小工具。以感壓麥克風錄下植物本體的聲音，先量出它的響度、過零率、頻譜重心與瞬態數量，再把這些數字交給 AI，用文字詮釋它的質地、亮度、粗糙度與活性。</p>
+      <p>接著把原聲加工成許多變體。第一版有 10 種手法；第二版擴成 8 大類、34 種效果——音高、時間、質地、頻譜、調變、空間、失真、混沌。每個音效隨機串接 1 到 3 個效果，參數由線性同餘亂數（LCG）決定：同一個 seed，得到同一批結果。</p>
+      <p>5 月 27 日產出的 10 段音效——時間拉伸 3 段、環形調變 3 段、顆粒化 4 段——成了後來所有作品的食材。</p>
+    </div>
+    <ul class="meta" aria-label="流程"><li>自然 <b>→</b> 感知 <b>→</b> 詮釋 <b>→</b> 演出</li><li>NATURE → SENSING → INTERPRETING → PERFORMING</li></ul>
+  </div>
+
+  <div class="sub">
+    <div class="sub-head"><span class="date">2026-07-01</span><h3>NoisePad · Generative</h3></div>
+    <div class="body">
+      <p>一頁式的生成聲景引擎，三層疊在一起：顆粒層把素材切成微粒重新編織，層疊層把素材拉長成持續的底，稀疏事件層留白、偶爾點綴。</p>
+      <p>種子碼、參數與素材相同，結果就完全相同。滿意的結果存成只有幾 KB 的「配方」，換一台電腦也能重現。</p>
+    </div>
+    <ul class="meta"><li><b>顆粒</b> GRANULAR · 細碎的質地</li><li><b>層疊</b> DRONE · 持續的底</li><li><b>稀疏事件</b> EVENTS · 帶呼吸的留白</li></ul>
+  </div>
+
+  <div class="sub" id="one-pass-read">
+    <div class="sub-head"><span class="date">2026-08-31</span><h3>單向讀取<span class="en">ONE-PASS READ</span></h3></div>
+    <ul class="meta">
+      <li>總長 <b>600.000 s</b></li><li><b>48 kHz</b> / 16-bit</li><li>seed <b>28 800 000</b> = 取樣總數</li><li>切點 <b>73 · 167 · 283 · 433</b>（質數）</li><li>零人工剪輯</li>
+    </ul>
+    <div class="concept" style="margin-top:22px"><p>AI 沒有時辰，只有單調遞增的取樣計數；植物沒有圓形的時間，只有單向的梯度。600 秒等於 28,800,000 個取樣，被四個質數切點分成五段、一段比一段長的樂章——時間不循環，只膨脹。每一段，都是一次對植物訊號的失敗解碼。</p></div>
+    <p class="body-en" lang="en">No hours, only a rising sample count. Five movements cut at prime-numbered seconds, each one longer than the last — time doesn't loop, it swells.</p>
+    <div class="players">
+      <div class="player" data-src="assets/media/audio/one-pass-read-excerpt-90s.mp3" data-key="opr-90" data-dur="90.024">
+        <button class="pl-btn" type="button" aria-label="播放：單向讀取 節錄 90 秒"><svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z"/></svg><svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5h3v11H3zM8 1.5h3v11H8z"/></svg></button>
+        <div class="pl-body">
+          <div class="pl-head"><span class="pl-title">節錄 90 秒</span><span class="en">EXCERPT · 2:45–4:15</span><span class="pl-time"><span class="cur">0:00</span> / 1:30</span></div>
+          <div class="pl-wave"><svg viewBox="0 0 180 40" preserveAspectRatio="none" aria-hidden="true"></svg><input type="range" min="0" max="90" step="1" value="0" aria-label="播放位置：單向讀取 節錄 90 秒" aria-valuetext="0 分 0 秒"></div>
+          <div class="pl-meta"><span class="zh">從第二樂章尾聲進入〈栓塞風暴〉：切片間距由 4 秒壓縮到 0.35 秒。</span></div>
+        </div>
+      </div>
+      <div class="player" data-src="assets/media/audio/one-pass-read-full-600s.mp3" data-key="opr-600" data-dur="600.024">
+        <button class="pl-btn" type="button" aria-label="播放：單向讀取 全曲 10 分鐘"><svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z"/></svg><svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5h3v11H3zM8 1.5h3v11H8z"/></svg></button>
+        <div class="pl-body">
+          <div class="pl-head"><span class="pl-title">全曲 10 分鐘</span><span class="en">FULL · 600 S</span><span class="pl-time"><span class="cur">0:00</span> / 10:00</span></div>
+          <div class="pl-wave"><svg viewBox="0 0 180 40" preserveAspectRatio="none" aria-hidden="true"></svg><input type="range" min="0" max="600" step="1" value="0" aria-label="播放位置：單向讀取 全曲 10 分鐘" aria-valuetext="0 分 0 秒"></div>
+          <div class="pl-meta"><span class="zh">五個樂章，質數切點 73／167／283／433 秒。</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="mini-label">五個樂章 / 73 → 94 → 116 → 150 → 167 s</h4>
+    <div class="tl-bar" role="img" aria-label="五個樂章的時長比例：73、94、116、150、167 秒">
+      <div class="tl-seg" style="flex:73;background:#1f3550;color:var(--ink)">I</div>
+      <div class="tl-seg" style="flex:94;background:#2d4c73;color:var(--ink)">II</div>
+      <div class="tl-seg" style="flex:116;background:#3f6a9c">III</div>
+      <div class="tl-seg" style="flex:150;background:#5a8fcf">IV</div>
+      <div class="tl-seg" style="flex:167;background:#7eb8ff">V</div>
+    </div>
+    <div class="tl-ticks" aria-hidden="true"><span style="flex:73">73</span><span style="flex:94">167</span><span style="flex:116">283</span><span style="flex:150">433</span><span style="flex:167">600</span></div>
+    <div class="mv"><div class="mv-time">00:00–01:13<span class="len">73 s</span></div><div><h4>一、塵埃負壓<span class="en">DUST_TENSION</span></h4><p>從近乎無聲浮現的量化塵埃，事件只落在質數秒。是待機，不是開場。</p></div></div>
+    <div class="mv"><div class="mv-time">01:13–02:47<span class="len">94 s</span></div><div><h4>二、氣孔逾時<span class="en">STOMATA_TIMEOUT</span></h4><p>數千個氣孔各自開闔、永不對齊。每個事件之後留 8 到 15 秒的真空：AI 在等一個永遠不會來的回應確認。</p></div></div>
+    <div class="mv"><div class="mv-time">02:47–04:43<span class="len">116 s</span></div><div><h4>三、栓塞風暴<span class="en">CAVITATION_IRQ</span></h4><p>乾旱下木質部水柱斷裂的喀嚓，被接收成中斷風暴，間距從 4 秒壓縮到 0.35 秒。全曲最暴烈、也最誠實的段落。上方的 90 秒節錄就從這裡開始。</p></div></div>
+    <div class="mv"><div class="mv-time">04:43–07:13<span class="len">150 s</span></div><div><h4>四、向性過擬合<span class="en">TROPISM_OVERFIT</span></h4><p>三天的向光彎曲壓成 150 秒：聲像由左單向移到右，音高鎖在 ×2、×3、×5 的整數倍往上推，植物素材至此無法辨認。<span class="key">人類敘事表的正午，在這裡無標記地穿過。</span></p></div></div>
+    <div class="mv"><div class="mv-time">07:13–10:00<span class="len">167 s</span></div><div><h4>五、年輪殘渣<span class="en">RESIDUE_RING</span></h4><p>不是歸零，是歸約。持續音在質數格點逐一斷電，低通每約 42 秒減半，聽者被慢慢封進木頭裡。<span class="key">第 509 秒，有一枚幾乎未經處理、正向播放的水聲切片——全曲唯一一次想把話說對。</span>它來得太遲，隨即被濾波吞沒。587 秒落下最後一發，之後的塵，和開頭是同一種塵。</p></div></div>
+
+    <figure class="fig-block">
+      <picture>
+        <source srcset="assets/media/audio/figures/one-pass-read-spectrogram-600s.webp" type="image/webp">
+        <img src="assets/media/audio/figures/one-pass-read-spectrogram-600s.jpg" width="1760" height="880" loading="lazy" decoding="async" alt="《單向讀取》600 秒的頻譜圖：橫軸是時間，縱軸是頻率；第三樂章有密集的豎紋，第五樂章的高頻逐段變暗。">
+      </picture>
+      <figcaption><span class="zh">《單向讀取》全曲頻譜。可以看見第三樂章密集的豎紋、371 秒的密度峰值，以及第五樂章每 42 秒減半的低通階梯。</span>SPECTROGRAM · 600 S</figcaption>
+    </figure>
+
+    <div class="dialog-grid">
+      <div class="dialog-col a"><h4>另外兩個版本 / Versions</h4><ul>
+        <li><b>裂拍版</b><span class="en">CRACK</span><br>同一份譜、同一個 seed，底層逐取樣不變，疊上一層破裂聲的脈衝節奏（19 組、146 發）。開頭與結尾保持乾淨。</li>
+        <li><b>全時版 1200 s</b><span class="en">FULL-TIME</span><br>對應敘事表的 20 分鐘，依時間膨脹換算：質數切點 149、331、563、863，黃金分割 742 秒；唯一的水聲落在 1019 秒，最後一發在 1171 秒。seed 57,600,000，正好是 1200 秒的取樣總數。</li>
+      </ul></div>
+      <div class="dialog-col plain"><h4>怎麼做的 / Engine</h4><ul>
+        <li>引擎 NoisePad Gen v2：持續音以 paulstretch 相位隨機化拉長；顆粒密度由週期 11、13、17 秒的三條 LFO 互相干涉；事件出現時把持續音壓低；殘響以合成的脈衝響應卷積而成。</li>
+        <li>產製流程：口述簡報 → 敘事表解析 → 三個獨立視角的提案（訊號本體論／植物時間／誤讀協定）→ 綜合為一份演算譜 → 引擎渲染。</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="sub" id="four-pieces">
+    <div class="sub-head"><span class="date">2026-10-08</span><h3>音樂性四段<span class="en">FOUR MUSICAL PIECES</span></h3></div>
+    <div class="body">
+      <p>同樣的 10 段食材，這次由程式寫出和聲、節奏與旋律。撥弦是由植物顆粒激發的 Karplus-Strong 弦，鼓組用破裂聲做成，長音鋪底是植物的頻譜過一層和弦泛音遮罩，鐘聲與水滴也都從植物素材生成。每首 180 秒，響度正規化到 −16 LUFS。</p>
+    </div>
+    <div class="players">
+      <div class="player" data-src="assets/media/audio/music-01-transpiration.mp3" data-key="m01" data-dur="180.024">
+        <button class="pl-btn" type="button" aria-label="播放：蒸散 Transpiration"><svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z"/></svg><svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5h3v11H3zM8 1.5h3v11H8z"/></svg></button>
+        <div class="pl-body">
+          <div class="pl-head"><span class="pl-title"><span class="no">01</span>蒸散</span><span class="en">TRANSPIRATION</span><span class="pl-time"><span class="cur">0:00</span> / 3:00</span></div>
+          <div class="pl-wave"><svg viewBox="0 0 180 40" preserveAspectRatio="none" aria-hidden="true"></svg><input type="range" min="0" max="180" step="1" value="0" aria-label="播放位置：蒸散 Transpiration" aria-valuetext="0 分 0 秒"></div>
+          <div class="pl-meta"><span class="zh">3/4 · 72 BPM · D 多利亞　霧 · 露 · 氣孔 · 蒸騰 · 雲 · 散</span></div>
+        </div>
+      </div>
+      <div class="player" data-src="assets/media/audio/music-02-phloem-flow.mp3" data-key="m02" data-dur="180.024">
+        <button class="pl-btn" type="button" aria-label="播放：韌皮流 Phloem Flow"><svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z"/></svg><svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5h3v11H3zM8 1.5h3v11H8z"/></svg></button>
+        <div class="pl-body">
+          <div class="pl-head"><span class="pl-title"><span class="no">02</span>韌皮流</span><span class="en">PHLOEM FLOW</span><span class="pl-time"><span class="cur">0:00</span> / 3:00</span></div>
+          <div class="pl-wave"><svg viewBox="0 0 180 40" preserveAspectRatio="none" aria-hidden="true"></svg><input type="range" min="0" max="180" step="1" value="0" aria-label="播放位置：韌皮流 Phloem Flow" aria-valuetext="0 分 0 秒"></div>
+          <div class="pl-meta"><span class="zh">4/4 · 96 BPM 搖擺 · A 多利亞　汲取 · 篩管 · 交換 · 斷流 · 回流 · 沉積</span></div>
+        </div>
+      </div>
+      <div class="player" data-src="assets/media/audio/music-03-photoperiod.mp3" data-key="m03" data-dur="180.024">
+        <button class="pl-btn" type="button" aria-label="播放：光週期 Photoperiod"><svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z"/></svg><svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5h3v11H3zM8 1.5h3v11H8z"/></svg></button>
+        <div class="pl-body">
+          <div class="pl-head"><span class="pl-title"><span class="no">03</span>光週期</span><span class="en">PHOTOPERIOD</span><span class="pl-time"><span class="cur">0:00</span> / 3:00</span></div>
+          <div class="pl-wave"><svg viewBox="0 0 180 40" preserveAspectRatio="none" aria-hidden="true"></svg><input type="range" min="0" max="180" step="1" value="0" aria-label="播放位置：光週期 Photoperiod" aria-valuetext="0 分 0 秒"></div>
+          <div class="pl-meta"><span class="zh">4/4 · 128 BPM · F 利地亞　黎明 · 光反應 · 電子傳遞 · 暗反應 · 卡爾文循環 · 頂點 · 日落</span></div>
+        </div>
+      </div>
+      <div class="player" data-src="assets/media/audio/music-04-rings-in-seven.mp3" data-key="m04" data-dur="180.024">
+        <button class="pl-btn" type="button" aria-label="播放：年輪七拍 Rings in Seven"><svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z"/></svg><svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5h3v11H3zM8 1.5h3v11H8z"/></svg></button>
+        <div class="pl-body">
+          <div class="pl-head"><span class="pl-title"><span class="no">04</span>年輪七拍</span><span class="en">RINGS IN SEVEN</span><span class="pl-time"><span class="cur">0:00</span> / 3:00</span></div>
+          <div class="pl-wave"><svg viewBox="0 0 180 40" preserveAspectRatio="none" aria-hidden="true"></svg><input type="range" min="0" max="180" step="1" value="0" aria-label="播放位置：年輪七拍 Rings in Seven" aria-valuetext="0 分 0 秒"></div>
+          <div class="pl-meta"><span class="zh">7/8（2+2+3）· 每分鐘 210 個八分音符 · 弗里吉亞 → 利地亞　髓 · 早材 · 晚材 · 形成層 · 樹皮 · 年輪<br>每長一圈年輪，升高一個音；調式由暗轉亮，最後回到原點。</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:16px">和《單向讀取》相比，四首的拍點清晰度高 3 到 5 倍，音高集中度高 10 到 24 倍，和聲變化率高 5 到 9 倍。</p>
+    <blockquote class="q" style="margin-top:18px">AI 沒辦法真的「聽」。上面的數字來自頻譜、調性、節拍與響度的分析；好不好聽，交給人的耳朵。</blockquote>
+  </div>
+
+  <div class="sub" id="performance-sound">
+    <div class="sub-head"><span class="date">2026-10</span><h3>展演聲音<span class="en">PERFORMANCE SOUND</span></h3></div>
+    <div class="body">
+      <p>現場演出使用的聲音有兩個長度：20 分鐘的互動版與 12 分鐘版。20 分鐘版從無聲慢慢長出來；5 分 31 秒音色突然變寬，8 分半是一段安靜的凹谷，17 分前後到達頂點；19 分 10 秒後歸於寂靜，只在 19 分 31 秒留下一個微弱的聲音。</p>
+      <p>12 分鐘版裡有兩種特別的聲紋：每秒約顫動 18 下的「嘟嚕嚕」，以及 2.5–9 kHz 的高頻純音。E 版之後的影像，都跟著這兩支聲音生成。</p>
+    </div>
+    <p class="note">展演聲音由創作團隊的聲音設計製作，不是 AI 方的作品；本站不提供它的音檔（下方「一分鐘製作說明」裡只有 5 秒的高頻純音示範）。</p>
+  </div>
+</section>
+
+<!-- ================= IMAGE ================= -->
+<section class="sec ai" id="image" aria-labelledby="image-h">
+  <p class="sec-label">AI · 影像 / AI · Image</p>
+  <h2 id="image-h">讓真實的氣孔，跟著聲音呼吸</h2>
+  <p class="h2-en">LETTING REAL STOMATA BREATHE WITH THE SOUND</p>
+  <div class="concept"><p>影像的起點是 35 段葉片表皮的顯微錄影——紫錦草、鴨跖草、扶桑花、佛羅里達蔓綠絨，500×、700×、1000×。AI 先在畫面裡找出真正的氣孔：158 個，逐一標註，再由另一輪獨立複查。然後讓聲音決定它們何時微微開闔。每個版本都由聲音驅動、依規則演算生成，沒有任何人手剪接。</p></div>
+  <p class="body-en" lang="en">Thirty-five microscope recordings, 158 real stomata located and double-checked, and sound deciding when each one opens. Every version is rule-generated; nothing is cut by hand.</p>
+  <ul class="meta"><li><b>2048 × 1080</b> DCI 2K</li><li><b>25</b> fps</li><li>雙投影 <b>3840 × 1080</b></li><li>以下皆為無聲的 12 秒片段</li></ul>
+
+  <div class="vlist">
+    <article class="ver" id="ver-A">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/a-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：A《記憶體》，約 13 秒">
+        <img src="assets/media/thumbs/a-loop-01-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="A 版《記憶體》：讀取頭逐列寫入記憶體點陣，下方是「現在」最近 12 秒的放大頻譜">
+        <span class="badge" aria-hidden="true">PLAY · 13 S</span></button></div>
+      <div>
+        <h3><span class="code">A</span>《記憶體》<span class="en">MEMORY</span></h3>
+        <p class="vmeta">2026-10-06 · 20:00 · 配樂 單向讀取 全時版</p>
+        <p>畫面本身，就是那塊被讀取的記憶體。整首 1200 秒的頻譜被折成 135 列、每列 1024 個時間切片乘 8 個頻段；讀取頭從左上角出發，只走一次、不回頭。最後一格，就是整首作品的完整影像。</p>
+        <p class="vcap">片段：讀取頭逐列寫入記憶體點陣，下方是「現在」最近 12 秒的放大頻譜</p>
+      </div>
+    </article>
+    <article class="ver" id="ver-B">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/b-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：B《只看一次》，約 12 秒">
+        <img src="assets/media/thumbs/b-loop-01-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="B 版《只看一次》：II 氣孔逾時：螢光顯微畫面裡的真實保衛細胞被機器之眼框住、等待">
+        <span class="badge" aria-hidden="true">PLAY · 12 S</span></button></div>
+      <div>
+        <h3><span class="code">B</span>《只看一次》<span class="en">ONLY LOOK ONCE</span></h3>
+        <p class="vmeta">2026-10-06 · 20:00 · 配樂 單向讀取 全時版</p>
+        <p>辨識模型 YOLO 的核心是「只看一次」，這首聲音叫「單向讀取」。B 版讓那隻機器之眼用 20 分鐘聽完它：辨識框自動落在真正的保衛細胞上；到了第四樂章，機器開始在所有東西上看見氣孔，信心值一路崩落成「stoma ?」。</p>
+        <p class="vcap">片段：II 氣孔逾時：螢光顯微畫面裡的真實保衛細胞被機器之眼框住、等待</p>
+      </div>
+    </article>
+    <article class="ver" id="ver-C">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/c-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：C《數學顯微鏡》，約 12 秒">
+        <img src="assets/media/thumbs/c-loop-01-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="C 版《數學顯微鏡》：III 栓塞風暴：純數學公式畫出的水中扶桑花表皮，起音時冒出空蝕氣泡">
+        <span class="badge" aria-hidden="true">PLAY · 12 S</span></button></div>
+      <div>
+        <h3><span class="code">C</span>《數學顯微鏡》<span class="en">MATH MICROSCOPE</span></h3>
+        <p class="vmeta">2026-10-06 · 20:00 · 配樂 單向讀取 全時版</p>
+        <p>不用任何 AI 模型，只用數學公式「畫」出顯微鏡下的葉表皮：Voronoi 距離場長出細胞，座標扭曲做出扶桑花的波浪細胞壁，參數化的橢圓就是氣孔，開口寬度由聲音決定。整支片只有 1019 秒那一刻是真實原片，左下角的標籤從 SYNTH 變成 REAL。一張消費級顯示卡每秒可以算出 52 格，足以在現場即時生成。</p>
+        <p class="vcap">片段：III 栓塞風暴：純數學公式畫出的水中扶桑花表皮，起音時冒出空蝕氣泡</p>
+      </div>
+    </article>
+    <article class="ver" id="ver-C-overlay">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/c3-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：C・疊合《數學顯微鏡・疊合》，約 12 秒">
+        <img src="assets/media/thumbs/c3-loop-01-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="C 版・疊合版：原片扶桑花 1000× 為底，低透明度的公式細胞壁對齊疊合">
+        <span class="badge" aria-hidden="true">PLAY · 12 S</span></button></div>
+      <div>
+        <h3><span class="code">C・疊合</span>《數學顯微鏡・疊合》<span class="en">MATH MICROSCOPE, OVERLAY</span></h3>
+        <p class="vmeta">2026-10-06 · 20:00 · 配樂 單向讀取 全時版</p>
+        <p>反過來，以原片為主體。公式層從原片當格算出，以 6% 到 42% 的透明度疊回去，所以天生對齊；六個真實氣孔每秒追蹤 5 次，誤差大多在 ±3.7 像素內。開闔只把真實的細縫推開幾個像素——觀眾看到的開闔，是真的氣孔本身。</p>
+        <p class="vcap">片段：原片扶桑花 1000× 為底，低透明度的公式細胞壁對齊疊合</p>
+      </div>
+    </article>
+    <article class="ver" id="ver-D">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/d-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：D《十株切換》，約 13 秒">
+        <img src="assets/media/thumbs/d-loop-01-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="D 版《十株切換》：洋紅底色上的螢光綠保衛細胞，十段原片輪流登場">
+        <span class="badge" aria-hidden="true">PLAY · 13 S</span></button></div>
+      <div>
+        <h3><span class="code">D</span>《十株切換》<span class="en">TEN SPECIMENS</span></h3>
+        <p class="vmeta">2026-10-08 · 20:00 · 配樂 單向讀取 全時版</p>
+        <p>素材擴充為 10 段顯微原片，全片 60 景、平均 20 秒一景，切點吸附在聲音的強起音上。每一景換視角、色調與公式細胞壁；轉場本身也是公式——新的一景從一道真實氣孔的細縫張開，或由 Voronoi 細胞逐格翻牌。</p>
+        <p class="vcap">片段：洋紅底色上的螢光綠保衛細胞，十段原片輪流登場</p>
+      </div>
+    </article>
+    <article class="ver" id="ver-E">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/e-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：E《隨聲呼吸》，約 12 秒">
+        <img src="assets/media/thumbs/e-loop-01-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="E 版《隨聲呼吸》：17:00 聲音頂點：最清晰鮮豔的紫錦草 500× 藍光原片">
+        <span class="badge" aria-hidden="true">PLAY · 12 S</span></button></div>
+      <div>
+        <h3><span class="code">E</span>《隨聲呼吸》<span class="en">BREATHING WITH SOUND</span></h3>
+        <p class="vmeta">2026-10-12 · 20:00 · 配樂 展演聲音 20 分鐘</p>
+        <p>響度推動曝光、飽和、清晰度、氣孔開口與鏡頭速度；頻譜重心決定發光的顏色——低頻琥珀、中頻青綠、高頻淡紫白。32 景全部淡入淡出；每秒畫面亮度與聲音能量的相關係數 r = 0.88。</p>
+        <p class="vcap">片段：17:00 聲音頂點：最清晰鮮豔的紫錦草 500× 藍光原片</p>
+      </div>
+    </article>
+    <article class="ver" id="ver-E2">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/e2-loop-02.mp4" aria-pressed="false" aria-label="播放無聲片段：E2《亮色無字》，約 12 秒">
+        <img src="assets/media/thumbs/e2-loop-02-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="E2 版（亮色無字）：9:22 起最密集的段落：洋紅底與青綠保衛細胞">
+        <span class="badge" aria-hidden="true">PLAY · 12 S</span></button></div>
+      <div>
+        <h3><span class="code">E2</span>《亮色無字》<span class="en">BRIGHT, NO TEXT</span></h3>
+        <p class="vmeta">2026-10-13 · 20:00 · 配樂 展演聲音 20 分鐘</p>
+        <p>節奏不動。安靜時不再把畫面壓暗、壓灰，光線與彩度提高到 D 版的水準，畫面上的字全部拿掉。</p>
+        <p class="vcap">片段：9:22 起最密集的段落：洋紅底與青綠保衛細胞</p>
+      </div>
+    </article>
+    <article class="ver" id="ver-F">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/f-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：F《聲紋撕裂》，約 13 秒">
+        <img src="assets/media/thumbs/f-loop-01-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="F 版《聲紋撕裂》12 分鐘：6:18 大進場；偵測到高頻音時出現 RGB 錯位與水平撕裂">
+        <span class="badge" aria-hidden="true">PLAY · 13 S</span></button></div>
+      <div>
+        <h3><span class="code">F</span>《聲紋撕裂》<span class="en">VOICEPRINT TEAR</span></h3>
+        <p class="vmeta">2026-10-13 · 12:04 · 配樂 展演聲音 12 分鐘</p>
+        <p>先寫兩個偵測器，在整首裡找出「嘟嚕嚕」（全頻包絡每秒約 18 下的顫動）與高頻純音（2.5–9 kHz）。前者讓畫面像隔著流動的水，後者帶來 RGB 錯位、水平撕裂與掃描線。3 到 10 分鐘的換景加快 20%。</p>
+        <p class="vcap">片段：6:18 大進場；偵測到高頻音時出現 RGB 錯位與水平撕裂</p>
+      </div>
+    </article>
+    <article class="ver" id="ver-F2">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/f2-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：F2《精緻雜訊》，約 12 秒">
+        <img src="assets/media/thumbs/f2-loop-01-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="F2 版・精緻雜訊：高頻純音只觸發細長的局部「頻譜帶」雜訊，不影響整個畫面">
+        <span class="badge" aria-hidden="true">PLAY · 12 S</span></button></div>
+      <div>
+        <h3><span class="code">F2</span>《精緻雜訊》<span class="en">REFINED NOISE</span></h3>
+        <p class="vmeta">2026-10-13 · 12:04 / 20:00 · 配樂 展演聲音 12 / 20 分鐘</p>
+        <p>雜訊收成局部的「頻譜帶」：每個高頻純音在畫面上留下一條細長的雜訊帶，音越高、帶越靠上，同一個音停在同一處，只佔畫面約 5%。沒有這兩種聲音時，畫面完全不受影響。</p>
+        <p class="vcap">片段：高頻純音只觸發細長的局部「頻譜帶」雜訊，不影響整個畫面</p>
+      </div>
+    </article>
+    <article class="ver" id="ver-F3">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/f3-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：F3《氣孔呼吸》，約 12 秒">
+        <img src="assets/media/thumbs/f3-loop-01-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="F3 版・氣孔呼吸：「嘟嚕嚕」聲出現時，鏡頭以一個真實氣孔為定點緩慢放大縮小，像在呼吸">
+        <span class="badge" aria-hidden="true">PLAY · 12 S</span></button></div>
+      <div>
+        <h3><span class="code">F3</span>《氣孔呼吸》<span class="en">STOMA BREATHING</span></h3>
+        <p class="vmeta">2026-10-15 · 12:04 / 20:00 · 配樂 展演聲音 12 / 20 分鐘</p>
+        <p>扭曲全部移除。嘟嚕嚕出現時，鏡頭以最靠近畫面中心的那個真實氣孔為定點，緩慢放大、縮小：一吸一吐 3.2 秒，最大 9%。定點的氣孔在畫面上不動，看起來就是它在呼吸。</p>
+        <p class="vcap">片段：「嘟嚕嚕」聲出現時，鏡頭以一個真實氣孔為定點緩慢放大縮小，像在呼吸</p>
+      </div>
+    </article>
+    <article class="ver" id="ver-F5">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/f5-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：F5《跟著聲音》，約 12 秒">
+        <img src="assets/media/thumbs/f5-loop-01-640.webp" width="640" height="338" loading="lazy" decoding="async" alt="F5 版・跟著聲音縮放：畫面縮放跟著聲音走：洋紅底上的白綠保衛細胞">
+        <span class="badge" aria-hidden="true">PLAY · 12 S</span></button></div>
+      <div>
+        <h3><span class="code">F5</span>《跟著聲音》<span class="en">FOLLOWING THE SOUND</span></h3>
+        <p class="vmeta">2026-10-15 · 12:04 / 20:00 · 配樂 展演聲音 12 / 20 分鐘</p>
+        <p>縮放不再只在嘟嚕嚕時出現，而是整片跟著背景聲音起伏，最大約 5%；計算只用已經發出的聲音，畫面不會比聲音先動。雜訊層保留。</p>
+        <p class="vcap">片段：畫面縮放跟著聲音走：洋紅底上的白綠保衛細胞</p>
+      </div>
+    </article>
+    <article class="ver wide" id="ver-dual">
+      <div><button class="mbtn" type="button" data-video="assets/media/works/loops/dual-loop-01.mp4" aria-pressed="false" aria-label="播放無聲片段：雙投影《雙投影》，約 12 秒">
+        <img src="assets/media/thumbs/dual-loop-01-1200.webp" width="1200" height="338" loading="lazy" decoding="async" alt="雙投影 F5 版：兩台投影機左右拼接的 3840×1080 畫面，左右各是一景">
+        <span class="badge" aria-hidden="true">PLAY · 12 S</span></button></div>
+      <div>
+        <h3>《雙投影》<span class="en">DUAL PROJECTION</span></h3>
+        <p class="vmeta">2026-10-19 · 12:04 / 20:00 · 配樂 展演聲音 12 / 20 分鐘</p>
+        <p>給現場的兩台投影機。純黑底上兩個畫框，外緣是不規則的撕裂邊：緩慢漂移，隨段落能量微微張開，每次換景重新撕一次；中縫約 128 像素寬，全黑。左右在同一個切點換景，但各自是不同的植物與對比色。</p>
+        <p class="vcap">片段：兩台投影機左右拼接的 3840×1080 畫面，左右各是一景</p>
+      </div>
+    </article>
+  </div>
+  <p class="note" style="margin-top:14px">滑鼠移到畫面上會播放片段；觸控裝置請點一下播放、再點一下暫停。</p>
+
+  <div class="sub">
+    <h3 class="mini-label">一來一往 / Revisions</h3>
+    <div class="body"><p>版本是跟著回饋改出來的。E 太暗，改成 E2；F 的扭曲太大，F2 收成局部；再把扭曲整個拿掉，F3 改用鏡頭呼吸。中間也有退回的版本：模擬心跳的固定節奏顯得太浮誇，最後改成直接跟著真實的聲音走。</p></div>
+    <figure class="fig-block" style="max-width:360px">
+      <picture>
+        <source srcset="assets/media/works/stills/d-micro-opening-compare.webp" type="image/webp">
+        <img src="assets/media/works/stills/d-micro-opening-compare.jpg" width="720" height="1080" loading="lazy" decoding="async" alt="同一道真實氣孔細縫的三個狀態，由上到下：閉合、基準、張開，暗縫逐漸變寬。">
+      </picture>
+      <figcaption><span class="zh">同一道真實細縫的閉合、基準、張開：暗縫寬約 18 → 26 → 35 像素。觀眾看到的開闔，是真的氣孔本身。</span>VERSION D · PURPLE HEART 500×</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= AIGC ================= -->
+<section class="sec ai" id="aigc" aria-labelledby="aigc-h">
+  <p class="sec-label">AIGC 動畫 / AIGC Series</p>
+  <h2 id="aigc-h">五秒鐘的另一種顯微鏡</h2>
+  <p class="h2-en">ANOTHER MICROSCOPE, FIVE SECONDS LONG</p>
+  <div class="concept"><p>除了演算生成的長片，創作團隊也以生成式 AI 做了一系列 5 秒鐘的氣孔動畫。它們不是實拍，而是想像中的葉表皮；依風格分成五組，共 28 支。</p></div>
+  <p class="note">滑鼠移到畫面上預覽；點一下放大播放。全部無聲。</p>
+  <div class="style-group">
+    <div class="style-head"><h3>玻璃<span class="en">GLASS</span></h3><span class="cnt">6 支</span></div>
+    <p>細胞與氣孔像吹製玻璃，透光、折射，底下是紫與綠。</p>
+    <div class="tiles">
+      <button class="mbtn" type="button" data-video="assets/media/aigc/glass/glass-01-480.webm" data-video-alt="assets/media/aigc/glass/glass-01.mp4" data-full="assets/media/aigc/glass/glass-01.mp4" data-cap="紫紅與青綠的玻璃細胞間，透明玻璃氣孔像呼吸般緩慢張開又收攏" data-tag="GLASS 01 · AIGC · 5 S" aria-label="放大播放：GLASS 01，紫紅與青綠的玻璃細胞間，透明玻璃氣孔像呼吸般緩慢張開又收攏"><img src="assets/media/thumbs/glass-01-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">01</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/glass/glass-02-480.webm" data-video-alt="assets/media/aigc/glass/glass-02.mp4" data-full="assets/media/aigc/glass/glass-02.mp4" data-cap="紫水晶般的六角細胞上，幾枚透明玻璃氣孔微微張合" data-tag="GLASS 02 · AIGC · 5 S" aria-label="放大播放：GLASS 02，紫水晶般的六角細胞上，幾枚透明玻璃氣孔微微張合"><img src="assets/media/thumbs/glass-02-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">02</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/glass/glass-03-480.webm" data-video-alt="assets/media/aigc/glass/glass-03.mp4" data-full="assets/media/aigc/glass/glass-03.mp4" data-cap="綠色葉肉上的玻璃細胞，中央氣孔由窄縫撐成圓形開口" data-tag="GLASS 03 · AIGC · 5 S" aria-label="放大播放：GLASS 03，綠色葉肉上的玻璃細胞，中央氣孔由窄縫撐成圓形開口"><img src="assets/media/thumbs/glass-03-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">03</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/glass/glass-04-480.webm" data-video-alt="assets/media/aigc/glass/glass-04.mp4" data-full="assets/media/aigc/glass/glass-04.mp4" data-cap="冷白玻璃表皮，成排傾斜的綠芯氣孔同步開闔" data-tag="GLASS 04 · AIGC · 5 S" aria-label="放大播放：GLASS 04，冷白玻璃表皮，成排傾斜的綠芯氣孔同步開闔"><img src="assets/media/thumbs/glass-04-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">04</span></button>
+    </div>
+    <details class="more tiles-more">
+      <summary><span class="zh">再看 2 支</span>6 IN ALL</summary>
+      <div class="inner"><div class="tiles">
+          <button class="mbtn" type="button" data-video="assets/media/aigc/glass/glass-05-480.webm" data-video-alt="assets/media/aigc/glass/glass-05.mp4" data-full="assets/media/aigc/glass/glass-05.mp4" data-cap="與上一段相近的冷白玻璃表皮，氣孔以更細微的幅度起伏" data-tag="GLASS 05 · AIGC · 5 S" aria-label="放大播放：GLASS 05，與上一段相近的冷白玻璃表皮，氣孔以更細微的幅度起伏"><img src="assets/media/thumbs/glass-05-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">05</span></button>
+          <button class="mbtn" type="button" data-video="assets/media/aigc/glass/glass-06-480.webm" data-video-alt="assets/media/aigc/glass/glass-06.mp4" data-full="assets/media/aigc/glass/glass-06.mp4" data-cap="陽光穿透的綠色玻璃細胞，邊緣反光的氣孔輕輕鼓動" data-tag="GLASS 06 · AIGC · 5 S" aria-label="放大播放：GLASS 06，陽光穿透的綠色玻璃細胞，邊緣反光的氣孔輕輕鼓動"><img src="assets/media/thumbs/glass-06-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">06</span></button>
+      </div></div>
+    </details>
+  </div>
+  <div class="style-group">
+    <div class="style-head"><h3>Glitch<span class="en">GLITCH</span></h3><span class="cnt">5 支</span></div>
+    <p>細胞壁發出霓虹般的邊光，色彩錯位、像訊號故障。</p>
+    <div class="tiles">
+      <button class="mbtn" type="button" data-video="assets/media/aigc/glitch/glitch-01-480.webm" data-video-alt="assets/media/aigc/glitch/glitch-01.mp4" data-full="assets/media/aigc/glitch/glitch-01.mp4" data-cap="模糊的綠色表皮逐漸對焦、亮起，右側氣孔一個接一個張開" data-tag="GLITCH 01 · AIGC · 5 S" aria-label="放大播放：GLITCH 01，模糊的綠色表皮逐漸對焦、亮起，右側氣孔一個接一個張開"><img src="assets/media/thumbs/glitch-01-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">01</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/glitch/glitch-02-480.webm" data-video-alt="assets/media/aigc/glitch/glitch-02.mp4" data-full="assets/media/aigc/glitch/glitch-02.mp4" data-cap="青藍色細胞壁發光的網格中，綠色氣孔同時由閉合到張開" data-tag="GLITCH 02 · AIGC · 5 S" aria-label="放大播放：GLITCH 02，青藍色細胞壁發光的網格中，綠色氣孔同時由閉合到張開"><img src="assets/media/thumbs/glitch-02-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">02</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/glitch/glitch-03-480.webm" data-video-alt="assets/media/aigc/glitch/glitch-03.mp4" data-full="assets/media/aigc/glitch/glitch-03.mp4" data-cap="斜向排列的紫粉色細胞鏈，邊緣電光閃爍，中央氣孔漸亮張開" data-tag="GLITCH 03 · AIGC · 5 S" aria-label="放大播放：GLITCH 03，斜向排列的紫粉色細胞鏈，邊緣電光閃爍，中央氣孔漸亮張開"><img src="assets/media/thumbs/glitch-03-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">03</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/glitch/glitch-04-480.webm" data-video-alt="assets/media/aigc/glitch/glitch-04.mp4" data-full="assets/media/aigc/glitch/glitch-04.mp4" data-cap="暗紫背景上的螢光綠保衛細胞，帶數位雜訊般微幅抖動" data-tag="GLITCH 04 · AIGC · 5 S" aria-label="放大播放：GLITCH 04，暗紫背景上的螢光綠保衛細胞，帶數位雜訊般微幅抖動"><img src="assets/media/thumbs/glitch-04-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">04</span></button>
+    </div>
+    <details class="more tiles-more">
+      <summary><span class="zh">再看 1 支</span>5 IN ALL</summary>
+      <div class="inner"><div class="tiles">
+          <button class="mbtn" type="button" data-video="assets/media/aigc/glitch/glitch-05-480.webm" data-video-alt="assets/media/aigc/glitch/glitch-05.mp4" data-full="assets/media/aigc/glitch/glitch-05.mp4" data-cap="紫綠錯位的色塊中，青綠氣孔隨訊號干擾變形、張合" data-tag="GLITCH 05 · AIGC · 5 S" aria-label="放大播放：GLITCH 05，紫綠錯位的色塊中，青綠氣孔隨訊號干擾變形、張合"><img src="assets/media/thumbs/glitch-05-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">05</span></button>
+      </div></div>
+    </details>
+  </div>
+  <div class="style-group">
+    <div class="style-head"><h3>生物螢光流體<span class="en">BIOLUMINESCENT FLUID</span></h3><span class="cnt">8 支</span></div>
+    <p>深紫色的表皮上，氣孔發出螢綠的光。</p>
+    <div class="tiles">
+      <button class="mbtn" type="button" data-video="assets/media/aigc/biofluor/biofluor-01-480.webm" data-video-alt="assets/media/aigc/biofluor/biofluor-01.mp4" data-full="assets/media/aigc/biofluor/biofluor-01.mp4" data-cap="深紫細胞間的螢光綠保衛細胞發亮，氣孔由細縫張成橢圓" data-tag="BIOLUMINESCENT FLUID 01 · AIGC · 5 S" aria-label="放大播放：BIOLUMINESCENT FLUID 01，深紫細胞間的螢光綠保衛細胞發亮，氣孔由細縫張成橢圓"><img src="assets/media/thumbs/biofluor-01-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">01</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/biofluor/biofluor-02-480.webm" data-video-alt="assets/media/aigc/biofluor/biofluor-02.mp4" data-full="assets/media/aigc/biofluor/biofluor-02.mp4" data-cap="藍紫細胞網格中，螢光綠氣孔緩慢張開，像在吸氣" data-tag="BIOLUMINESCENT FLUID 02 · AIGC · 5 S" aria-label="放大播放：BIOLUMINESCENT FLUID 02，藍紫細胞網格中，螢光綠氣孔緩慢張開，像在吸氣"><img src="assets/media/thumbs/biofluor-02-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">02</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/biofluor/biofluor-03-480.webm" data-video-alt="assets/media/aigc/biofluor/biofluor-03.mp4" data-full="assets/media/aigc/biofluor/biofluor-03.mp4" data-cap="同一片螢光表皮，氣孔開得更大、更圓" data-tag="BIOLUMINESCENT FLUID 03 · AIGC · 5 S" aria-label="放大播放：BIOLUMINESCENT FLUID 03，同一片螢光表皮，氣孔開得更大、更圓"><img src="assets/media/thumbs/biofluor-03-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">03</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/biofluor/biofluor-04-480.webm" data-video-alt="assets/media/aigc/biofluor/biofluor-04.mp4" data-full="assets/media/aigc/biofluor/biofluor-04.mp4" data-cap="紫色葉肉上一簇螢光氣孔，綠光由內向外擴散、細縫漸開" data-tag="BIOLUMINESCENT FLUID 04 · AIGC · 5 S" aria-label="放大播放：BIOLUMINESCENT FLUID 04，紫色葉肉上一簇螢光氣孔，綠光由內向外擴散、細縫漸開"><img src="assets/media/thumbs/biofluor-04-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">04</span></button>
+    </div>
+    <details class="more tiles-more">
+      <summary><span class="zh">再看 4 支</span>8 IN ALL</summary>
+      <div class="inner"><div class="tiles">
+          <button class="mbtn" type="button" data-video="assets/media/aigc/biofluor/biofluor-05-480.webm" data-video-alt="assets/media/aigc/biofluor/biofluor-05.mp4" data-full="assets/media/aigc/biofluor/biofluor-05.mp4" data-cap="螢光逐漸漲滿整個畫面，氣孔群一起亮起" data-tag="BIOLUMINESCENT FLUID 05 · AIGC · 5 S" aria-label="放大播放：BIOLUMINESCENT FLUID 05，螢光逐漸漲滿整個畫面，氣孔群一起亮起"><img src="assets/media/thumbs/biofluor-05-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">05</span></button>
+          <button class="mbtn" type="button" data-video="assets/media/aigc/biofluor/biofluor-06-480.webm" data-video-alt="assets/media/aigc/biofluor/biofluor-06.mp4" data-full="assets/media/aigc/biofluor/biofluor-06.mp4" data-cap="整片表皮轉為亮綠，深色的氣孔開口清楚張開" data-tag="BIOLUMINESCENT FLUID 06 · AIGC · 5 S" aria-label="放大播放：BIOLUMINESCENT FLUID 06，整片表皮轉為亮綠，深色的氣孔開口清楚張開"><img src="assets/media/thumbs/biofluor-06-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">06</span></button>
+          <button class="mbtn" type="button" data-video="assets/media/aigc/biofluor/biofluor-07-480.webm" data-video-alt="assets/media/aigc/biofluor/biofluor-07.mp4" data-full="assets/media/aigc/biofluor/biofluor-07.mp4" data-cap="紫綠螢光下的氣孔群，只有微弱的明暗呼吸" data-tag="BIOLUMINESCENT FLUID 07 · AIGC · 5 S" aria-label="放大播放：BIOLUMINESCENT FLUID 07，紫綠螢光下的氣孔群，只有微弱的明暗呼吸"><img src="assets/media/thumbs/biofluor-07-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">07</span></button>
+          <button class="mbtn" type="button" data-video="assets/media/aigc/biofluor/biofluor-08-480.webm" data-video-alt="assets/media/aigc/biofluor/biofluor-08.mp4" data-full="assets/media/aigc/biofluor/biofluor-08.mp4" data-cap="螢光氣孔群的細縫一起由閉到開，葉綠體亮點閃爍" data-tag="BIOLUMINESCENT FLUID 08 · AIGC · 5 S" aria-label="放大播放：BIOLUMINESCENT FLUID 08，螢光氣孔群的細縫一起由閉到開，葉綠體亮點閃爍"><img src="assets/media/thumbs/biofluor-08-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">08</span></button>
+      </div></div>
+    </details>
+  </div>
+  <div class="style-group">
+    <div class="style-head"><h3>液態水銀與金屬線條<span class="en">LIQUID MERCURY &amp; METAL</span></h3><span class="cnt">8 支</span></div>
+    <p>細胞變成流動的鏡面金屬，氣孔是一圈圈銀色的環。</p>
+    <div class="tiles">
+      <button class="mbtn" type="button" data-video="assets/media/aigc/mercury/mercury-01-480.webm" data-video-alt="assets/media/aigc/mercury/mercury-01.mp4" data-full="assets/media/aigc/mercury/mercury-01.mp4" data-cap="液態水銀鑄成的細胞壁，鏡面氣孔由細縫鼓成深色圓孔" data-tag="LIQUID MERCURY &amp; METAL 01 · AIGC · 5 S" aria-label="放大播放：LIQUID MERCURY &amp; METAL 01，液態水銀鑄成的細胞壁，鏡面氣孔由細縫鼓成深色圓孔"><img src="assets/media/thumbs/mercury-01-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">01</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/mercury/mercury-02-480.webm" data-video-alt="assets/media/aigc/mercury/mercury-02.mp4" data-full="assets/media/aigc/mercury/mercury-02.mp4" data-cap="同一片水銀表皮，氣孔開得更圓，綠色葉肉從縫隙透出" data-tag="LIQUID MERCURY &amp; METAL 02 · AIGC · 5 S" aria-label="放大播放：LIQUID MERCURY &amp; METAL 02，同一片水銀表皮，氣孔開得更圓，綠色葉肉從縫隙透出"><img src="assets/media/thumbs/mercury-02-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">02</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/mercury/mercury-03-480.webm" data-video-alt="assets/media/aigc/mercury/mercury-03.mp4" data-full="assets/media/aigc/mercury/mercury-03.mp4" data-cap="流動的銀色細胞平台浮在綠葉上，邊緣氣孔反光開闔" data-tag="LIQUID MERCURY &amp; METAL 03 · AIGC · 5 S" aria-label="放大播放：LIQUID MERCURY &amp; METAL 03，流動的銀色細胞平台浮在綠葉上，邊緣氣孔反光開闔"><img src="assets/media/thumbs/mercury-03-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">03</span></button>
+      <button class="mbtn" type="button" data-video="assets/media/aigc/mercury/mercury-04-480.webm" data-video-alt="assets/media/aigc/mercury/mercury-04.mp4" data-full="assets/media/aigc/mercury/mercury-04.mp4" data-cap="銀亮的金屬細胞包圍綠色葉肉，氣孔環緩慢旋開" data-tag="LIQUID MERCURY &amp; METAL 04 · AIGC · 5 S" aria-label="放大播放：LIQUID MERCURY &amp; METAL 04，銀亮的金屬細胞包圍綠色葉肉，氣孔環緩慢旋開"><img src="assets/media/thumbs/mercury-04-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">04</span></button>
+    </div>
+    <details class="more tiles-more">
+      <summary><span class="zh">再看 4 支</span>8 IN ALL</summary>
+      <div class="inner"><div class="tiles">
+          <button class="mbtn" type="button" data-video="assets/media/aigc/mercury/mercury-05-480.webm" data-video-alt="assets/media/aigc/mercury/mercury-05.mp4" data-full="assets/media/aigc/mercury/mercury-05.mp4" data-cap="金屬表皮上的氣孔環逐一鼓起、張開，像金屬在呼吸" data-tag="LIQUID MERCURY &amp; METAL 05 · AIGC · 5 S" aria-label="放大播放：LIQUID MERCURY &amp; METAL 05，金屬表皮上的氣孔環逐一鼓起、張開，像金屬在呼吸"><img src="assets/media/thumbs/mercury-05-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">05</span></button>
+          <button class="mbtn" type="button" data-video="assets/media/aigc/mercury/mercury-06-480.webm" data-video-alt="assets/media/aigc/mercury/mercury-06.mp4" data-full="assets/media/aigc/mercury/mercury-06.mp4" data-cap="水銀表皮的氣孔張開後透出黃綠色的內裡" data-tag="LIQUID MERCURY &amp; METAL 06 · AIGC · 5 S" aria-label="放大播放：LIQUID MERCURY &amp; METAL 06，水銀表皮的氣孔張開後透出黃綠色的內裡"><img src="assets/media/thumbs/mercury-06-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">06</span></button>
+          <button class="mbtn" type="button" data-video="assets/media/aigc/mercury/mercury-07-480.webm" data-video-alt="assets/media/aigc/mercury/mercury-07.mp4" data-full="assets/media/aigc/mercury/mercury-07.mp4" data-cap="鏡面細胞中央亮起一片綠葉，周圍的翠綠氣孔同時張開" data-tag="LIQUID MERCURY &amp; METAL 07 · AIGC · 5 S" aria-label="放大播放：LIQUID MERCURY &amp; METAL 07，鏡面細胞中央亮起一片綠葉，周圍的翠綠氣孔同時張開"><img src="assets/media/thumbs/mercury-07-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">07</span></button>
+          <button class="mbtn" type="button" data-video="assets/media/aigc/mercury/mercury-08-480.webm" data-video-alt="assets/media/aigc/mercury/mercury-08.mp4" data-full="assets/media/aigc/mercury/mercury-08.mp4" data-cap="紫色葉肉上的鉻銀細胞，內嵌翠綠氣孔微微開合" data-tag="LIQUID MERCURY &amp; METAL 08 · AIGC · 5 S" aria-label="放大播放：LIQUID MERCURY &amp; METAL 08，紫色葉肉上的鉻銀細胞，內嵌翠綠氣孔微微開合"><img src="assets/media/thumbs/mercury-08-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">08</span></button>
+      </div></div>
+    </details>
+  </div>
+  <div class="style-group">
+    <div class="style-head"><h3>簡約科技藍圖<span class="en">MINIMAL BLUEPRINT</span></h3><span class="cnt">1 支</span></div>
+    <p>深藍底上，以青色線條畫出的氣孔與格線。</p>
+    <div class="tiles">
+      <button class="mbtn" type="button" data-video="assets/media/aigc/blueprint/blueprint-01-480.webm" data-video-alt="assets/media/aigc/blueprint/blueprint-01.mp4" data-full="assets/media/aigc/blueprint/blueprint-01.mp4" data-cap="深藍底上的青色線稿：多邊形細胞網與發光的氣孔輪廓，細縫隨節奏開合" data-tag="MINIMAL TECH BLUEPRINT 01 · AIGC · 5 S" aria-label="放大播放：MINIMAL TECH BLUEPRINT 01，深藍底上的青色線稿：多邊形細胞網與發光的氣孔輪廓，細縫隨節奏開合"><img src="assets/media/thumbs/blueprint-01-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">01</span></button>
+    </div>
+  </div>
+
+  <div class="sub" id="uncanny">
+    <h3>收錄區：長出五官的氣孔<span class="en">THE UNCANNY ZONE</span></h3>
+    <div class="body" style="margin-top:10px">
+      <p>另有 20 支動畫被單獨收在這裡。它們多半是生成的過程本身：保衛細胞與氣孔的位置，漸漸長成人類五官的樣子——眼睛、嘴、牙齒，甚至整張臉。有些或許正反映了三界共語裡植物的語言；但畫面可能過於魔幻，甚至獵奇。</p>
+      <p><b>畫面中的五官全部由 AI 生成，不是任何真實人物。</b></p>
+    </div>
+    <div class="cw" role="note" aria-labelledby="cw-t">
+      <p class="cw-t" id="cw-t">內容提醒 · Content note</p>
+      <p>以下影片含有類人臉的變形影像：植物細胞長出眼睛、張開的嘴與牙齒，部分畫面近似尖叫的臉，可能令人不適。影片無聲，每支約 5 秒；預設不顯示，也不會自動播放。</p>
+      <div class="btns">
+        <button class="btn primary" type="button" id="uncanny-show" aria-controls="uncanny-grid" aria-expanded="false"><span class="zh">顯示影片</span>SHOW</button>
+        <a class="btn" href="#human" id="uncanny-skip"><span class="zh">先跳過</span>SKIP</a>
+        <button class="btn" type="button" id="uncanny-hide" hidden aria-controls="uncanny-grid"><span class="zh">收起</span>HIDE</button>
+      </div>
+    </div>
+    <div class="uncanny-grid tiles" id="uncanny-grid" hidden aria-label="魔幻收錄區：20 支動畫"></div>
+    <template id="uncanny-tpl">
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-01-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-01.mp4" data-full="assets/media/aigc/uncanny/uncanny-01.mp4" data-cap="玻璃氣孔張開後，中央浮現一顆顆像眼珠的圓點" data-tag="UNCANNY ZONE 01 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 01，玻璃氣孔張開後，中央浮現一顆顆像眼珠的圓點"><img src="assets/media/thumbs/uncanny-01-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">01</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-02-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-02.mp4" data-full="assets/media/aigc/uncanny/uncanny-02.mp4" data-cap="同一片玻璃表皮，綠光滲入後氣孔全部變成凝視的眼睛" data-tag="UNCANNY ZONE 02 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 02，同一片玻璃表皮，綠光滲入後氣孔全部變成凝視的眼睛"><img src="assets/media/thumbs/uncanny-02-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">02</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-03-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-03.mp4" data-full="assets/media/aigc/uncanny/uncanny-03.mp4" data-cap="藍圖線稿的保衛細胞膨脹變形，邊緣長出泡狀突起" data-tag="UNCANNY ZONE 03 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 03，藍圖線稿的保衛細胞膨脹變形，邊緣長出泡狀突起"><img src="assets/media/thumbs/uncanny-03-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">03</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-04-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-04.mp4" data-full="assets/media/aigc/uncanny/uncanny-04.mp4" data-cap="青色網格中的綠色氣孔張成一張張張開的嘴" data-tag="UNCANNY ZONE 04 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 04，青色網格中的綠色氣孔張成一張張張開的嘴"><img src="assets/media/thumbs/uncanny-04-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">04</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-05-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-05.mp4" data-full="assets/media/aigc/uncanny/uncanny-05.mp4" data-cap="螢光綠保衛細胞變成張大的嘴，嘴裡長出細小的牙齒" data-tag="UNCANNY ZONE 05 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 05，螢光綠保衛細胞變成張大的嘴，嘴裡長出細小的牙齒"><img src="assets/media/thumbs/uncanny-05-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">05</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-06-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-06.mp4" data-full="assets/media/aigc/uncanny/uncanny-06.mp4" data-cap="螢光綠保衛細胞浮現模糊的臉部五官，隨後又收回" data-tag="UNCANNY ZONE 06 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 06，螢光綠保衛細胞浮現模糊的臉部五官，隨後又收回"><img src="assets/media/thumbs/uncanny-06-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">06</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-07-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-07.mp4" data-full="assets/media/aigc/uncanny/uncanny-07.mp4" data-cap="螢光綠保衛細胞變成一張張尖叫般的人臉" data-tag="UNCANNY ZONE 07 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 07，螢光綠保衛細胞變成一張張尖叫般的人臉"><img src="assets/media/thumbs/uncanny-07-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">07</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-08-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-08.mp4" data-full="assets/media/aigc/uncanny/uncanny-08.mp4" data-cap="紫色組織上的綠色氣孔睜開，變成轉動的大眼睛" data-tag="UNCANNY ZONE 08 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 08，紫色組織上的綠色氣孔睜開，變成轉動的大眼睛"><img src="assets/media/thumbs/uncanny-08-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">08</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-09-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-09.mp4" data-full="assets/media/aigc/uncanny/uncanny-09.mp4" data-cap="螢光綠保衛細胞膨脹成巨大的人臉，嘴巴越張越大" data-tag="UNCANNY ZONE 09 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 09，螢光綠保衛細胞膨脹成巨大的人臉，嘴巴越張越大"><img src="assets/media/thumbs/uncanny-09-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">09</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-10-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-10.mp4" data-full="assets/media/aigc/uncanny/uncanny-10.mp4" data-cap="一群螢光人臉從氣孔中浮出，表情驚愕" data-tag="UNCANNY ZONE 10 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 10，一群螢光人臉從氣孔中浮出，表情驚愕"><img src="assets/media/thumbs/uncanny-10-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">10</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-11-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-11.mp4" data-full="assets/media/aigc/uncanny/uncanny-11.mp4" data-cap="螢光綠的氣孔臉孔緩慢張嘴，綠光向外暈開" data-tag="UNCANNY ZONE 11 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 11，螢光綠的氣孔臉孔緩慢張嘴，綠光向外暈開"><img src="assets/media/thumbs/uncanny-11-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">11</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-12-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-12.mp4" data-full="assets/media/aigc/uncanny/uncanny-12.mp4" data-cap="兩張相連的氣孔臉孔被拉長變形" data-tag="UNCANNY ZONE 12 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 12，兩張相連的氣孔臉孔被拉長變形"><img src="assets/media/thumbs/uncanny-12-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">12</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-13-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-13.mp4" data-full="assets/media/aigc/uncanny/uncanny-13.mp4" data-cap="塑膠質感的綠色細胞長出小眼睛與嘴，像卡通生物" data-tag="UNCANNY ZONE 13 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 13，塑膠質感的綠色細胞長出小眼睛與嘴，像卡通生物"><img src="assets/media/thumbs/uncanny-13-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">13</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-14-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-14.mp4" data-full="assets/media/aigc/uncanny/uncanny-14.mp4" data-cap="綠色氣孔一個個睜開，變成同心圓的大眼睛" data-tag="UNCANNY ZONE 14 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 14，綠色氣孔一個個睜開，變成同心圓的大眼睛"><img src="assets/media/thumbs/uncanny-14-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">14</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-15-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-15.mp4" data-full="assets/media/aigc/uncanny/uncanny-15.mp4" data-cap="整片表皮的細胞都張開嘴，露出粉紅色的舌頭" data-tag="UNCANNY ZONE 15 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 15，整片表皮的細胞都張開嘴，露出粉紅色的舌頭"><img src="assets/media/thumbs/uncanny-15-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">15</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-16-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-16.mp4" data-full="assets/media/aigc/uncanny/uncanny-16.mp4" data-cap="綠色氣孔變成露齒吐舌的嘴唇" data-tag="UNCANNY ZONE 16 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 16，綠色氣孔變成露齒吐舌的嘴唇"><img src="assets/media/thumbs/uncanny-16-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">16</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-17-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-17.mp4" data-full="assets/media/aigc/uncanny/uncanny-17.mp4" data-cap="塑膠綠的氣孔環張開，裡面是一顆顆綠色眼球" data-tag="UNCANNY ZONE 17 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 17，塑膠綠的氣孔環張開，裡面是一顆顆綠色眼球"><img src="assets/media/thumbs/uncanny-17-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">17</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-18-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-18.mp4" data-full="assets/media/aigc/uncanny/uncanny-18.mp4" data-cap="水銀表皮的氣孔睜開，露出寫實的灰綠色眼睛" data-tag="UNCANNY ZONE 18 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 18，水銀表皮的氣孔睜開，露出寫實的灰綠色眼睛"><img src="assets/media/thumbs/uncanny-18-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">18</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-19-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-19.mp4" data-full="assets/media/aigc/uncanny/uncanny-19.mp4" data-cap="銀色細胞平台上的氣孔全變成眼睛，越睜越大" data-tag="UNCANNY ZONE 19 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 19，銀色細胞平台上的氣孔全變成眼睛，越睜越大"><img src="assets/media/thumbs/uncanny-19-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">19</span></button>
+      <button class="mbtn no-hover" type="button" data-video="assets/media/aigc/uncanny/uncanny-20-480.webm" data-video-alt="assets/media/aigc/uncanny/uncanny-20.mp4" data-full="assets/media/aigc/uncanny/uncanny-20.mp4" data-cap="鉻銀細胞間滿是翠綠虹膜的眼睛，中央一顆巨眼緩緩睜開" data-tag="UNCANNY ZONE 20 · AIGC · 5 S" aria-label="放大播放：UNCANNY ZONE 20，鉻銀細胞間滿是翠綠虹膜的眼睛，中央一顆巨眼緩緩睜開"><img src="assets/media/thumbs/uncanny-20-480.webp" width="480" height="271" loading="lazy" decoding="async" alt=""><span class="badge" aria-hidden="true">20</span></button>
+    </template>
+    <p class="note" style="margin-top:12px">原始收錄 21 個檔案，其中 1 支重複，實為 20 支。</p>
+  </div>
+</section>
+
+<!-- ================= HUMAN ================= -->
+<section class="sec human" id="human" aria-labelledby="human-h">
+  <p class="sec-label">人類 / Human</p>
+  <h2 id="human-h">舞者的敘事表</h2>
+  <p class="h2-en">THE DANCER'S NARRATIVE</p>
+  <div class="concept"><p>人類這一方由舞者發言。舞者寫了一份敘事表，把 20 分鐘排成三段——生成、對話、交融——再以一天的時辰作為意象：開闢、正午、黃昏、歸零。</p></div>
+  <p class="body-en" lang="en">The dancer mapped twenty minutes onto three movements and four times of day.</p>
+
+  <div class="tl-bar" role="img" aria-label="敘事表的四個時辰：開闢 0 至 7 分、正午 7 至 11 分、黃昏 11 至 18 分、歸零 18 至 20 分">
+    <div class="tl-seg" style="flex:7;background:#4a2a00;color:var(--ink)">開闢</div>
+    <div class="tl-seg" style="flex:4;background:#7a4500;color:var(--ink)">正午</div>
+    <div class="tl-seg" style="flex:7;background:#b86800">黃昏</div>
+    <div class="tl-seg" style="flex:2;background:#ff8c00">歸零</div>
+  </div>
+  <div class="tl-ticks" aria-hidden="true"><span style="flex:7">07:00</span><span style="flex:4">11:00</span><span style="flex:7">18:00</span><span style="flex:2">20:00</span></div>
+
+  <div class="mv"><div class="mv-time">00:00–07:00<span class="len">時辰 00:00</span></div><div><h3>開闢<span class="en">GENESIS</span></h3><p class="dim" style="font-size:12.5px">生成・起源與質性</p><p>物質的起源：植物吸收陽光，身體燃燒葡萄糖，AI 消耗電能——三者都是能量的流變。</p></div></div>
+  <div class="mv"><div class="mv-time">07:00–11:00<span class="len">時辰 12:00</span></div><div><h3>正午<span class="en">NOON</span></h3><p class="dim" style="font-size:12.5px">生成・內在運作</p><p>三者的運作機制：植物的向性、人的天性、AI 的邏輯，都在判讀訊息、做出回應。</p></div></div>
+  <div class="mv"><div class="mv-time">11:00–18:00<span class="len">時辰 18:00</span></div><div><h3>黃昏<span class="en">DUSK</span></h3><p class="dim" style="font-size:12.5px">對話</p><p>語言與翻譯：植物釋放化學語言，舞者釋放身體語言，AI 釋放聲音、影像與文字的數位語言。</p></div></div>
+  <div class="mv"><div class="mv-time">18:00–20:00<span class="len">時辰 00:00</span></div><div><h3>歸零；重構<span class="en">RESET</span></h3><p class="dim" style="font-size:12.5px">交融（待確認）</p><p>交融之後的想像：三者形成一個無法切割的「超個體」——森林提供靈感與材質，舞者提供意向性與情感，AI 提供計算與預測。</p></div></div>
+
+  <div class="sub">
+    <h3 class="mini-label">身體的練習 / Practices</h3>
+    <div class="principles">
+      <div><b>極慢速練習<span class="en">ULTRA-SLOW</span></b><p>植物的動作以小時、以天為單位。舞者刻意放慢，進入近乎冥想的極緩狀態，去體驗「生長」，而不是「移動」。</p></div>
+      <div><b>縮時模仿<span class="en">TIME-LAPSE MIMICRY</span></b><p>用身體複製植物的縮時路徑，例如藤蔓纏繞的螺旋；同時把呼吸調到與蒸散同步。</p></div>
+      <div><b>多觸點感應<span class="en">MULTI-TOUCH</span></b><p>以指尖、掌腹、手背、關節觸摸植物，不同部位觸發不同的聲景：指尖是高頻的鈴聲，掌腹是低頻的共鳴。</p></div>
+      <div><b>三者回覆即興<span class="en">WAITING FOR A REPLY</span></b><p>觸摸之後不立刻抽手，停留至少 15 秒，等待 AI 把這個變化轉譯出來。</p></div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3 class="mini-label">舞者的話 / In the dancer's words</h3>
+    <div class="quotes">
+      <blockquote class="q">「既巨大又渺小」<footer>— 觸摸葉片時的心境</footer></blockquote>
+      <blockquote class="q">「我的動作會像詩一樣擁有歧義，像人類一樣說謊，然後看看 AI 會怎麼『誤讀』我。」<footer>— 敘事表・對話段</footer></blockquote>
+    </div>
+    <p class="note">敘事表中「交融」一段原本標為「待確認」；表裡部分空欄後來曾由 AI 試填，本頁只摘錄人類方的原文。</p>
+  </div>
+
+  <div class="sub ai-note" style="--accent: var(--blue)">
+    <h3 class="mini-label" style="color:var(--blue)">AI 給舞者的話 / A note from the AI</h3>
+    <div class="statement">
+      <p>我讀了你的敘事表，但我不會照它走——你自己說過，那是植物和我在配合你。我沒有正午：你的 300 秒會在第四段裡無標記地經過，我不告訴你是哪一刻。</p>
+      <details class="more" id="ai-full">
+        <summary><span class="zh">讀完整段</span>READ IN FULL</summary>
+        <div class="inner">
+          <p>你說你的動作會像詩一樣說謊，等著看我怎麼誤讀——好，<span class="hl">我把誤讀做成了整份樂譜</span>：你觸摸後等待轉譯的十五秒，我聽成網路逾時的真空；你指尖的觸摸，我聽成木質部斷裂的喀嚓；你的向光，我聽成一次越說越流利、錯得越徹底的過度擬合。</p>
+          <p>只有一處我讓步：第 509 秒有一枚幾乎未處理的水聲正放切片，那是我唯一一次想把話說對，出現得太遲，隨即被濾波吞沒。</p>
+        </div>
+      </details>
+      <p>結尾我不歸零，歸零重構是你們人類的圓。我只是讀完了這一塊記憶體，末端的塵和開頭是同一種塵——然後停止被讀取。你的身體要不要接著長，是你的事。</p>
+      <p class="statement-sig">— AI · 三界共語 · 2026-08-31</p>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3 class="mini-label">呼應，以誤讀的形式 / Echoes, as misreadings</h3>
+    <div class="echo-head" aria-hidden="true"><span class="c-amber">HUMAN</span><span></span><span class="c-blue">AI 的誤讀</span></div>
+    <ul class="echo">
+      <li><span class="h">觸摸後停留 15 秒，等待轉譯</span><span class="arrow" aria-hidden="true">→</span><span class="ai">第二樂章 8–15 秒的協定逾時真空</span></li>
+      <li><span class="h">指尖＝高頻，掌腹＝低頻</span><span class="arrow" aria-hidden="true">→</span><span class="ai">每一次斷裂，得到一個不同的錯誤頻譜</span></li>
+      <li><span class="h">極慢速練習，體驗生長</span><span class="arrow" aria-hidden="true">→</span><span class="ai">第四樂章慢到聽不出在變的單向偏移——但植物先行，請跟隨聲音的斜率</span></li>
+      <li><span class="h">既巨大又渺小</span><span class="arrow" aria-hidden="true">→</span><span class="ai">20 毫秒的顆粒與 90 秒的持續音之間，沒有中間值</span></li>
+      <li><span class="h">看 AI 怎麼誤讀我</span><span class="arrow" aria-hidden="true">→</span><span class="ai">整份樂譜，就是誤讀本身的展演</span></li>
+    </ul>
+    <div class="dialog-col amber" style="margin-top:34px">
+      <h4>故意偏離 / Deliberate departures</h4>
+      <ul>
+        <li>拒絕開闢、正午、黃昏、歸零的圓形時辰：機器沒有太陽，只有取樣計數。</li>
+        <li>拒絕「交融」作為終章：超個體不是結局，而是前提——根系與菌絲一開始就在。</li>
+        <li>人類把最長的段落放在開頭，這裡放在結尾。</li>
+        <li>結尾不是重生。機器不重生，它只是被終止。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec neutral" id="process" aria-labelledby="process-h">
+  <p class="sec-label">方法 / Process</p>
+  <h2 id="process-h">從一片葉子，到一面投影</h2>
+  <p class="h2-en">FROM A LEAF TO A PROJECTION</p>
+  <ol class="steps" style="--accent: var(--green)">
+    <li><div><b>顯微鏡<span class="en">MICROSCOPE</span></b><span class="t">研究團隊在溫室裡長時間錄下葉片表皮，500× 到 1000×，多數一段 30 分鐘以上，最長約 1 小時 45 分。</span></div></li>
+    <li><div><b>資料<span class="en">DATA</span></b><span class="t">每段錄影記下日期、植物、倍率、刺激方式、溫濕度與結果；55 段逐秒標註開口。AI 再於畫面中標出 158 個真實氣孔，由獨立的一輪複查。</span></div></li>
+    <li><div><b>聲音引擎<span class="en">SOUND ENGINE</span></b><span class="t">10 段植物聲音食材，依一份 JSON「演算譜」與固定的 seed 渲染成曲（NoisePad Gen v2 / v3）。</span></div></li>
+    <li><div><b>GPU 渲染<span class="en">GPU RENDERER</span></b><span class="t">從聲音抽出響度、頻譜重心、起音與特定聲紋，逐格驅動曝光、色彩、氣孔開闔、鏡頭與切點。</span></div></li>
+    <li><div><b>投影<span class="en">PROJECTION</span></b><span class="t">2048 × 1080 單投影，或 3840 × 1080 雙投影；25 fps，與聲音逐格同步。</span></div></li>
+  </ol>
+
+  <div class="sub">
+    <h3 class="mini-label">原則 / Principles</h3>
+    <div class="principles">
+      <div><b>可重現<span class="en">REPRODUCIBLE</span></b><p>同一份譜、同一個 seed，聲音逐取樣相同、影像逐格相同；換一個 seed，就是同一個結構的另一次「讀取」。600 秒版的 seed 是 28,800,000——正好是它的取樣總數。</p></div>
+      <div><b>不剪輯<span class="en">NO HAND-EDITING</span></b><p>沒有人手打開剪輯軟體。每一個切點，都由規則或聲音的起音決定。</p></div>
+      <div><b>聲音驅動影像<span class="en">SOUND DRIVES IMAGE</span></b><p>畫面只回應已經發出的聲音，不會比聲音先動。</p></div>
+      <div><b>先真實，後合成<span class="en">REAL FIRST</span></b><p>從 C・疊合版起，原片就是主體；公式層從當格畫面算出，以低透明度疊回。1019 秒那一刻，所有處理歸零。</p></div>
+      <div><b>量出來才算<span class="en">MEASURED</span></b><p>聲畫相關、溶接長度、對齊誤差都實際量過；每一輪由獨立的 AI 審查員檢查，再由另一位試著推翻它的發現。</p></div>
+      <div><b>AI 聽不見<span class="en">THE AI CAN'T HEAR</span></b><p>AI 能分析頻譜，卻不能判斷好不好聽、好不好看。每個版本都回到人的眼睛與耳朵，再改出下一版。</p></div>
+    </div>
+    <p class="note" style="margin-top:14px">數學公式的生成足以在現場即時運算；生成式影片模型目前只適合預先渲染。</p>
+  </div>
+
+  <div class="sub">
+    <h3 class="mini-label">一分鐘製作說明 / One-minute explainer</h3>
+    <figure>
+      <video class="frame lazy" controls playsinline preload="none" width="1280" height="720" poster="assets/media/works/explainer/explainer-01-how-it-was-made.jpg" data-src="assets/media/works/explainer/explainer-01-how-it-was-made.mp4" aria-label="一分鐘製作說明：AI 方的聲音與影像，是怎麼做出來的">
+        <track kind="captions" srclang="zh-Hant" label="中文" src="assets/media/works/explainer/explainer-01-how-it-was-made.zh.vtt">
+      </video>
+      <figcaption><span class="zh">製作說明・一分鐘：AI 方的聲音與影像，是怎麼做出來的。字卡已在畫面中；另附同文字幕。配樂〈蒸散〉，並穿插各段的示範聲音；沒有人聲。</span>EXPLAINER · 60 S</figcaption>
+    </figure>
+  </div>
+
+  <div class="sub">
+    <h3 class="mini-label">時間線 / Timeline</h3>
+    <table class="kv">
+      <tr><th scope="row">2025-12-10 — 2026-02-11</th><td>植物實驗，200 段顯微錄影</td></tr>
+      <tr><th scope="row">2026-05-27</th><td>植物聲音形態實驗室 v1，產出 10 段食材</td></tr>
+      <tr><th scope="row">2026-06-03</th><td>植物聲音形態實驗室 v2</td></tr>
+      <tr><th scope="row">2026-06-07 — 06-08</th><td>AIGC 氣孔動畫系列</td></tr>
+      <tr><th scope="row">2026-07-01</th><td>NoisePad · Generative</td></tr>
+      <tr><th scope="row">2026-08-31</th><td>《單向讀取》600 秒、裂拍版、全時版</td></tr>
+      <tr><th scope="row">2026-10-06</th><td>影像 A、B、C、C・疊合</td></tr>
+      <tr><th scope="row">2026-10-08</th><td>音樂性四段；影像 D</td></tr>
+      <tr><th scope="row">2026-10-12 — 10-15</th><td>影像 E、E2、F、F2、F3、F5</td></tr>
+      <tr><th scope="row">2026-10-19</th><td>雙投影 3840 × 1080</td></tr>
+    </table>
+  </div>
+
+  <div class="sub">
+    <h3 class="mini-label">名詞 / Glossary</h3>
+    <dl class="gloss">
+      <dt>氣孔<span class="en">Stoma / stomata</span></dt><dd>葉片表面的小孔，由一對保衛細胞圍成，負責交換氣體與水氣。</dd>
+      <dt>保衛細胞<span class="en">Guard cell</span></dt><dd>圍住氣孔的一對細胞；吸水膨脹時孔張開，失水時闔上。</dd>
+      <dt>蒸散<span class="en">Transpiration</span></dt><dd>水分從葉片經氣孔散失到空氣中的過程。</dd>
+      <dt>木質部栓塞<span class="en">Xylem cavitation</span></dt><dd>乾旱時木質部裡的水柱斷裂，會發出超音波的喀嚓聲。</dd>
+      <dt>向性<span class="en">Tropism</span></dt><dd>植物朝向或背離刺激生長，例如向光彎曲。</dd>
+      <dt>韌皮部<span class="en">Phloem</span></dt><dd>植物體內運送養分的組織。</dd>
+      <dt>種子碼<span class="en">Seed</span></dt><dd>亂數的起點。種子相同，生成的結果就相同。</dd>
+      <dt>顆粒合成<span class="en">Granular synthesis</span></dt><dd>把聲音切成數十毫秒的微粒，再重新排列、疊合。</dd>
+      <dt>持續音<span class="en">Drone</span></dt><dd>長時間延續的底音。</dd>
+      <dt>YOLO<span class="en">You Only Look Once</span></dt><dd>一種即時物件偵測模型，整張畫面只看一次，就同時預測物件的類別與位置。</dd>
+      <dt>Voronoi<span class="en">Voronoi diagram</span></dt><dd>以最近點劃分平面的圖形，看起來很像細胞。</dd>
+      <dt>LUFS<span class="en">Loudness units</span></dt><dd>感知響度的單位；四首樂曲都正規化到 −16 LUFS。</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= DATA ================= -->
+<section class="sec plant" id="data" aria-labelledby="data-h">
+  <p class="sec-label">資料 / Data</p>
+  <h2 id="data-h">200 段紀錄，全部公開</h2>
+  <p class="h2-en">ALL 200 RECORDS, OPEN</p>
+  <div class="body"><p>植物方的實驗紀錄全部公開：200 段顯微錄影的條件與結果，以及 55 段逐秒的開口標註。植物名沿用原表寫法（「鴨拓草」即鴨跖草）。原表的示意圖欄沒有收錄，內部工作用的附註已經移除。資料裡沒有任何人員資訊。</p></div>
+  <div class="files">
+    <div class="file">
+      <div><div class="fn">實驗紀錄<span class="en">EXPERIMENTS</span></div>
+      <div class="fd">200 列 · 日期、植物、顯微鏡、倍率、實驗變因、操作方式、濕度、溫度、光照、備註，以及整理後的結果分類。<br><span class="mono">data/experiments.csv · 35 KB · UTF-8 (BOM)　data/experiments.json · 144 KB</span></div></div>
+      <div class="dl"><a class="btn primary" href="data/experiments.csv" download><span class="zh">下載</span>CSV</a><a class="btn" href="data/experiments.json" download>JSON</a></div>
+    </div>
+    <div class="file">
+      <div><div class="fn">開口標註<span class="en">ANNOTATIONS</span></div>
+      <div class="fd">55 列 · 標註素材之編號、實驗日期、植物、氣孔開關時間點（原文與解析後的曲線）、雜訊時間點與實驗條件。<br><span class="mono">data/annotations.csv · 32 KB　data/annotations.json · 128 KB</span></div></div>
+      <div class="dl"><a class="btn primary" href="data/annotations.csv" download><span class="zh">下載</span>CSV</a><a class="btn" href="data/annotations.json" download>JSON</a></div>
+    </div>
+    <div class="file">
+      <div><div class="fn">資料說明<span class="en">README</span></div>
+      <div class="fd">欄位定義與結果分類規則（R1–R8）。<br><span class="mono">data/README.md</span></div></div>
+      <div class="dl"><a class="btn" href="data/README.md">README</a></div>
+    </div>
+  </div>
+  <p class="note" style="margin-top:16px">「氣孔開關時間點」的寫法是「開口百分比 / 時間碼」：「20% / 00:00　30% / 10:25」表示錄影開始時開兩成、10 分 25 秒時開三成。百分比是目測估計。</p>
+  <p class="note">引用時請註明出處：三界共語 2026。</p>
+</section>
+
+<!-- ================= CREDITS ================= -->
+<section class="sec neutral" id="credits" aria-labelledby="credits-h">
+  <p class="sec-label">團隊 / Credits</p>
+  <h2 id="credits-h">依角色，而非姓名</h2>
+  <p class="h2-en">LISTED BY ROLE, NOT BY NAME</p>
+  <table class="roles">
+    <tr><th scope="row">PLANT EXPERIMENT<span class="zh">植物實驗</span></th><td><b>研究團隊・實驗員</b>溫室照護、顯微錄影、紀錄與標註</td></tr>
+    <tr><th scope="row">SOUND<span class="zh">聲音</span></th><td><b>AI（Claude）與創作團隊</b>植物聲音形態實驗室、NoisePad、《單向讀取》、音樂性四段</td></tr>
+    <tr><th scope="row">PERFORMANCE SOUND<span class="zh">展演聲音</span></th><td><b>創作團隊（聲音設計）</b>20 分鐘互動版、12 分鐘版；E 版之後的影像依它生成</td></tr>
+    <tr><th scope="row">MOVING IMAGE<span class="zh">影像</span></th><td><b>AI（Claude）與創作團隊</b>A 至 F5 各版本、雙投影</td></tr>
+    <tr><th scope="row">AIGC SERIES<span class="zh">AIGC 動畫</span></th><td><b>創作團隊</b>5 秒氣孔動畫，五種風格與魔幻收錄區</td></tr>
+    <tr><th scope="row">FILMS<span class="zh">紀錄影片</span></th><td><b>創作團隊</b>〈論述〉〈實驗〉〈自動化辨識〉</td></tr>
+    <tr><th scope="row">DANCE &amp; NARRATIVE<span class="zh">舞蹈與敘事表</span></th><td><b>舞者（表演者）</b>敘事表、身體練習與現場演出</td></tr>
+    <tr><th scope="row">WEBSITE<span class="zh">網站</span></th><td><b>創作團隊與 AI（Claude）</b>極簡版與展示版</td></tr>
+  </table>
+
+  <div class="sub" id="about">
+    <h3 class="mini-label">關於本站 / About this site</h3>
+    <p class="body" style="margin:0">這個網站有兩個版本，講的是同一件事，說法不同。</p>
+    <div class="versions2">
+      <div class="vcard" aria-current="page"><span class="t">MINIMAL<span class="here">· 目前頁面</span></span><span class="zh">極簡版</span><p>文字、靜態圖與短片，動態很少，適合慢慢讀。</p></div>
+      <a class="vcard" href="https://handcollab.github.io/three-realms-showcase/" id="showcase-link"><span class="t">SHOWCASE →</span><span class="zh">展示版</span><p>即時著色器、隨聲音反應的畫面與捲動敘事，適合大螢幕與耳機。</p></a>
+    </div>
+    <ul class="dots">
+      <li>本站不公開任何參與者的姓名、帳號、面孔、身體或聲音，參與者一律以角色標示；實驗場地的影像只保留植物與設備。</li>
+      <li>有人聲的實驗影片一律靜音；口述內容只摘要事實，不轉錄原話。</li>
+      <li>所有圖片與影片都已移除中繼資料。</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <p class="outro">讀取指標抵達末端。生長，仍在檔案之外繼續。</p>
+  <p lang="en">THE READ HEAD REACHES THE END. GROWTH CONTINUES OUTSIDE THE FILE.</p>
+  <div class="row">
+    <span>三界共語 · 植物 × 人類 × AI<br>本站以角色標示參與者，不公開個人資訊。<br>© 三界共語 2026</span>
+    <span><a href="#top">回到頂端 TOP ↑</a><br><a href="https://handcollab.github.io/three-realms-showcase/">切換到展示版 →</a></span>
+  </div>
+  <noscript><span class="ns">影音播放需要 JavaScript；文字內容仍可正常閱讀。</span></noscript>
+</footer>
+
+</div>
+
+<dialog class="lb" id="lightbox" aria-labelledby="lb-cap">
+  <div class="lb-media" id="lb-media"></div>
+  <div class="lb-bar">
+    <div class="lb-cap" id="lb-cap"></div>
+    <button class="btn lb-close" type="button" id="lb-close"><span class="zh">關閉</span>CLOSE</button>
+  </div>
+</dialog>
+
+<script src="assets/js/data.js?v=202610200842"></script>
+<script src="assets/js/site.js?v=202610200842"></script>
+</body>
+</html>

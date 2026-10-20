@@ -1,0 +1,5 @@
+noto-sans-tc-sub.woff2 and noto-serif-tc-sub.woff2 are subsets of Noto Sans TC and Noto Serif TC.
+Noto Sans TC: (c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
+Noto Serif TC: (c) 2017-2023 Adobe (http://www.adobe.com/).
+Both are licensed under the SIL Open Font License, Version 1.1: https://openfontlicense.org
+The subsets contain only the characters used on this site and the weight range the stylesheet uses.
