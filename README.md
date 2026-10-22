@@ -12,10 +12,13 @@ A quiet, text-led website for *Interspecies Dialogue* (三界共語), a live per
 - **AIGC 動畫**：五種風格 28 支（每種先列 4 支，其餘收合）；另有 20 支「長出五官」的動畫收在獨立區塊，需點擊才會顯示。
 - **人類**：舞者的敘事表與 AI 的回應。
 - **資料**：`data/` 內含這 200 段精選紀錄與 55 段開口標註（CSV / JSON）及欄位說明。
+- **製作名單**：依官方 Credit List 原文刊載三界共語二部曲（表演）與三部曲（展覽）的製作名單。
 
 ## 隱私
 
-本站不公開任何參與者的姓名、帳號、面孔、身體或聲音，參與者一律以角色標示。有人聲的實驗影片一律靜音；實驗場地的影像只保留植物與設備；所有圖片與影片都已移除中繼資料。
+實驗影像、聲音與實驗紀錄不呈現參與者的面孔、身體與聲音，也不含帳號等個人資訊；製作名單依官方 Credit List 具名，姓名只出現在頁面末段的「製作名單」。有人聲的實驗影片一律靜音；實驗場地的影像只保留植物與設備；所有圖片與影片都已移除中繼資料。
+
+Lab footage, sound and data records show no participant's face, body or voice; people are named only in the credits section, as listed in the production's official credit list.
 
 ## 結構
 
