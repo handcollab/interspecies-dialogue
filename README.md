@@ -8,7 +8,7 @@ A quiet, text-led website for *Interspecies Dialogue* (三界共語), a live per
 
 - **植物**：實驗經過（前後數百次測試，本站精選節錄其中 200 段氣孔顯微錄影）、可篩選的圓點圖與表格、55 段開口標註的曲線（先列 4 段代表，其餘收合）。
 - **AI · 聲音**：《單向讀取》（節錄與全曲）與音樂性四段，附波形播放器；展演聲音只有文字說明，不附音檔。
-- **AI · 影像**：A 到 F5 與雙投影各版本的無聲片段。
+- **AI · 影像**：開頭是作品影片（嵌入製作團隊在 YouTube 頻道發布的影片，按下播放才載入）；接著是 A 到 F5 與雙投影各版本的無聲片段。
 - **AIGC 動畫**：五種風格 28 支（每種先列 4 支，其餘收合）；另有 20 支「長出五官」的動畫收在獨立區塊，需點擊才會顯示。
 - **人類**：舞者的敘事表與 AI 的回應。
 - **資料**：`data/` 內含這 200 段精選紀錄與 55 段開口標註（CSV / JSON）及欄位說明。
@@ -17,6 +17,8 @@ A quiet, text-led website for *Interspecies Dialogue* (三界共語), a live per
 ## 隱私
 
 實驗影像、聲音與實驗紀錄不呈現參與者的面孔、身體與聲音，也不含帳號等個人資訊；製作名單依官方 Credit List 與團隊提供的名單具名，姓名只出現在頁面末段的「製作名單」。有人聲的實驗影片一律靜音；實驗場地的影像只保留植物與設備；所有圖片與影片都已移除中繼資料。
+
+影像章節開頭的作品影片嵌入自製作團隊在 YouTube 頻道發布的影片，內容以原片為準。頁面上先放的是本站自己的顯微畫格當封面；按下播放之前，頁面不會連線到 YouTube，按下後才以 YouTube 的隱私加強模式載入播放器。
 
 Lab footage, sound and data records show no participant's face, body or voice; people are named only in the credits section, as listed in the official credit list and the list supplied by the team.
 
@@ -43,8 +45,8 @@ data/                 可下載的資料
 
 網址：
 
-- **本站** https://handcollab.github.io/interspecies-dialogue/ ；**展示版** https://handcollab.github.io/interspecies-dialogue-showcase/
-- **分享預覽圖**：`og:url`、`og:image` 與 `twitter:image` 都已寫成上面這個本站網址底下的完整網址（Facebook、LINE、X 需要）。repository 若再改名，`index.html` 裡這幾處與展示版連結要一起改。
+- **本站** https://handcollab.github.io/interspecies-dialogue/ ；**展示版** https://handcollab.github.io/interspecies-dialogue-showcase/ ；**展示版（英文）** https://handcollab.github.io/interspecies-dialogue-showcase-en/
+- **分享預覽圖**：`og:url`、`og:image` 與 `twitter:image` 都已寫成上面這個本站網址底下的完整網址（Facebook、LINE、X 需要）。repository 若再改名，`index.html` 裡這幾處與兩個展示版的連結要一起改。
 
 本機預覽：在這個資料夾執行 `python -m http.server`，再開 `http://localhost:8000/`。
 

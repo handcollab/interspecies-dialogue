@@ -285,6 +285,28 @@
   };
   $$('.player').forEach(function (p) { new Player(p); });
 
+  /* ------------------------------------------------------------ the film: click-to-load YouTube */
+  // Until the click there is no request to YouTube: the button shows our own still. The click swaps it for a
+  // privacy-enhanced (no-cookie) YouTube iframe (autoplay, since the visitor just asked to play) and stops this page's own sound.
+  $$('.film-btn[data-yt]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var id = b.dataset.yt;
+      if (!/^[\w-]{11}$/.test(id)) return;
+      players.forEach(function (p) { p.pause(); });
+      $$('video').forEach(function (v) { if (!v.muted && !v.paused) v.pause(); });
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+      f.title = b.dataset.title || 'YouTube';
+      f.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture; fullscreen');
+      // the legacy attribute only where `allow` cannot grant fullscreen (Chromium warns when both are set)
+      var fp = document.permissionsPolicy || document.featurePolicy;
+      if (!(fp && fp.features && fp.features().indexOf('fullscreen') >= 0)) f.setAttribute('allowfullscreen', '');
+      f.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+      b.parentNode.replaceChild(f, b);
+      f.focus();
+    });
+  });
+
   /* ------------------------------------------------------------ filter state */
   var state = { plant: '', stim: '' };
   var listeners = [];

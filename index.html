@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap"></noscript>
-<link rel="stylesheet" href="assets/css/site.css?v=202610230028">
+<link rel="stylesheet" href="assets/css/site.css?v=202610260221">
 </head>
 <body>
 <a class="skip" href="#main">跳到內容</a>
@@ -382,7 +382,7 @@
     <div class="dialog-grid">
       <div class="dialog-col a"><h4>另外兩個版本 / Versions</h4><ul>
         <li><b>裂拍版</b><span class="en">CRACK</span><br>同一份譜、同一個 seed，底層逐取樣不變，疊上一層破裂聲的脈衝節奏（19 組、146 發）。開頭與結尾保持乾淨。</li>
-        <li><b>全時版 1200 s</b><span class="en">FULL-TIME</span><br>對應敘事表的 20 分鐘，依時間膨脹換算：質數切點 149、331、563、863，黃金分割 742 秒；唯一的水聲落在 1019 秒，最後一發在 1171 秒。seed 57,600,000，正好是 1200 秒的取樣總數。</li>
+        <li><b>全時版 1200 s</b><span class="en">FULL-LENGTH</span><br>對應敘事表的 20 分鐘，依時間膨脹換算：質數切點 149、331、563、863，黃金分割 742 秒；唯一的水聲落在 1019 秒，最後一發在 1171 秒。seed 57,600,000，正好是 1200 秒的取樣總數。</li>
       </ul></div>
       <div class="dialog-col plain"><h4>怎麼做的 / Engine</h4><ul>
         <li>引擎 NoisePad Gen v2：持續音以 paulstretch 相位隨機化拉長；顆粒密度由週期 11、13、17 秒的三條 LFO 互相干涉；事件出現時把持續音壓低；殘響以合成的脈衝響應卷積而成。</li>
@@ -449,6 +449,19 @@
   <p class="sec-label">AI · 影像 / AI · Image</p>
   <h2 id="image-h">讓真實的氣孔，跟著聲音呼吸</h2>
   <p class="h2-en">LETTING REAL STOMATA BREATHE WITH THE SOUND</p>
+  <figure class="film" id="film" aria-labelledby="film-h">
+    <h3 class="visually-hidden" id="film-h">作品影片 The Film</h3>
+    <div class="film-frame">
+      <button class="film-btn" type="button" data-yt="H9dKvSVsPyA" data-title="三界共語 作品影片 The Film（YouTube）" aria-label="播放作品影片 The Film（按下後從 YouTube 載入）">
+        <img src="assets/media/thumbs/film-poster-800.webp" srcset="assets/media/thumbs/film-poster-800.webp 800w, assets/media/thumbs/film-poster-1600.webp 1600w" sizes="(min-width: 792px) 760px, calc(100vw - 32px)" width="1600" height="900" loading="lazy" decoding="async" alt="">
+        <span class="film-tag" aria-hidden="true">FILM</span>
+        <span class="film-play" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M3 1.5v11l9-5.5z"/></svg></span>
+        <span class="film-ttl" aria-hidden="true"><span class="zh">作品影片</span><span class="en">THE FILM</span></span>
+        <span class="film-src" aria-hidden="true">YOUTUBE</span>
+      </button>
+    </div>
+    <figcaption><span class="zh">《三界共語》作品影片，由製作團隊發布於官方 YouTube 頻道。按下播放後才會連線到 YouTube（隱私加強模式）；封面是本站的鴨跖草 500× 顯微畫格，不是影片畫面。</span><a class="film-yt" href="https://youtu.be/H9dKvSVsPyA" target="_blank" rel="noopener">在 YouTube 觀看 WATCH ON YOUTUBE ↗</a></figcaption>
+  </figure>
   <div class="concept"><p>影像的起點是 35 段葉片表皮的顯微錄影——紫錦草、鴨跖草、扶桑花、佛羅里達蔓綠絨，500×、700×、1000×。AI 先在畫面裡找出真正的氣孔：158 個，逐一標註，再由另一輪獨立複查。然後讓聲音決定它們何時微微開闔。每個版本都由聲音驅動、依規則演算生成，沒有任何人手剪接。</p></div>
   <p class="body-en" lang="en">Thirty-five microscope recordings, 158 real stomata located and double-checked, and sound deciding when each one opens. Every version is rule-generated; nothing is cut by hand.</p>
   <ul class="meta"><li><b>2048 × 1080</b> DCI 2K</li><li><b>25</b> fps</li><li>雙投影 <b>3840 × 1080</b></li><li>以下皆為無聲的 12 秒片段</li></ul>
@@ -1072,15 +1085,17 @@
 
   <div class="sub" id="about">
     <h3 class="mini-label">關於本站 / About this site</h3>
-    <p class="body" style="margin:0">這個網站有兩個版本，講的是同一件事，說法不同。</p>
+    <p class="body" style="margin:0">這個網站有兩個版本，講的是同一件事，說法不同；展示版另有全英文版。</p>
     <div class="versions2">
       <div class="vcard" aria-current="page"><span class="t">MINIMAL<span class="here">· 目前頁面</span></span><span class="zh">極簡版</span><p>文字、靜態圖與短片，動態很少，適合慢慢讀。</p></div>
       <a class="vcard" href="https://handcollab.github.io/interspecies-dialogue-showcase/" id="showcase-link"><span class="t">SHOWCASE →</span><span class="zh">展示版</span><p>即時著色器、隨聲音反應的畫面與捲動敘事，適合大螢幕與耳機。</p></a>
+      <a class="vcard" href="https://handcollab.github.io/interspecies-dialogue-showcase-en/" id="showcase-en-link" hreflang="en"><span class="t">SHOWCASE · ENGLISH →</span><span class="zh">展示版（英文）</span><p>展示版的全英文版本。<span class="en" lang="en">The showcase, fully in English.</span></p></a>
     </div>
     <ul class="dots">
       <li>實驗影像、聲音與實驗紀錄不呈現參與者的面孔、身體與聲音，也不含帳號等個人資訊；製作名單依官方 Credit List 與團隊提供的名單具名，姓名只出現在上方的製作名單。實驗場地的影像只保留植物與設備。<span class="en" lang="en">Lab footage, sound and records show no participant's face, body or voice; people are named only in the credits above, as listed in the official credit list and the list supplied by the team.</span></li>
       <li>有人聲的實驗影片一律靜音；口述內容只摘要事實，不轉錄原話。</li>
       <li>所有圖片與影片都已移除中繼資料。</li>
+      <li>影像章節開頭的作品影片，嵌入自製作團隊在 YouTube 頻道發布的影片，內容以原片為準；按下播放之前，本頁不會連線到 YouTube。<span class="en" lang="en">The film at the top of the Image chapter is embedded from the production team's YouTube channel; nothing is requested from YouTube until you press play.</span></li>
     </ul>
   </div>
 </section>
@@ -1091,8 +1106,8 @@
   <p class="outro">讀取指標抵達末端。生長，仍在檔案之外繼續。</p>
   <p lang="en">THE READ HEAD REACHES THE END. GROWTH CONTINUES OUTSIDE THE FILE.</p>
   <div class="row">
-    <span>三界共語 · 植物 × 人類 × AI<br>影像與實驗紀錄不呈現參與者的面孔、身體與聲音；製作名單依官方 Credit List 與團隊提供的名單具名。<br>© 三界共語 Interspecies Dialogue 2026</span>
-    <span><a href="#top">回到頂端 TOP ↑</a><br><a href="https://handcollab.github.io/interspecies-dialogue-showcase/">切換到展示版 →</a></span>
+    <span>三界共語 · 植物 × 人類 × AI<br>實驗影像、聲音與實驗紀錄不呈現參與者的面孔、身體與聲音；製作名單依官方 Credit List 與團隊提供的名單具名。<br>© 三界共語 Interspecies Dialogue 2026</span>
+    <span><a href="#top">回到頂端 TOP ↑</a><br><a href="https://handcollab.github.io/interspecies-dialogue-showcase/">切換到展示版 →</a><br><a href="https://handcollab.github.io/interspecies-dialogue-showcase-en/" hreflang="en" lang="en">SHOWCASE IN ENGLISH →</a></span>
   </div>
   <noscript><span class="ns">影音播放需要 JavaScript；文字內容仍可正常閱讀。</span></noscript>
 </footer>
@@ -1107,7 +1122,7 @@
   </div>
 </dialog>
 
-<script src="assets/js/data.js?v=202610230028"></script>
-<script src="assets/js/site.js?v=202610230028"></script>
+<script src="assets/js/data.js?v=202610260221"></script>
+<script src="assets/js/site.js?v=202610260221"></script>
 </body>
 </html>
